@@ -1,0 +1,89 @@
+<!--#include("_header.html")-->
+
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+
+<form action="./" method="post" id="fo_insert_job" ruleset="insertJob">
+    <input type="hidden" name="mid" value="{$mid}" />
+	<input type="hidden" name="act" value="procRecruitInsertJob" />
+    <input type="hidden" name="document_srl" value="{$document_srl}" />
+	<input type="hidden" name="content" value="{$oDocument->getContentText()?$oDocument->getContentText():$oDocument->get('default_content')}" />
+
+    <table class="extraVarsList" cellspacing="0" summary="Extra Form " width="100%">
+	    <caption><em>*</em> : {$lang->is_required}</caption>
+		<tr>
+			<th scope="row">{$lang->job_title} <em>*</em></th>
+			<td class="extra_fields"><input type="text" class="text" value="{$job_info->title}" name="title"></td>
+		</tr>
+		 <tr cond="$module_info->use_category=='Y' && $category_list">
+			<th scope="row">{$lang->category}  <em>*</em></th>
+			<td>
+				<select name="job_category" class="category">
+					<!--@foreach($category_list as $val)-->
+					<option <!--@if(!$val->grant)-->disabled="disabled"<!--@endif--> value="{$val->category_srl}" <!--@if($val->grant&&$val->selected||$val->category_srl==$oDocument->get('category_srl'))-->selected="selected"<!--@endif-->>
+						{str_repeat("&nbsp;&nbsp;",$val->depth)} {$val->title} 
+					</option>
+					<!--@endforeach-->
+				</select>
+			</td>
+		</tr>
+		<block cond="$module_info->use_location=='Y' && $location_list">
+			<th scope="row">{$lang->location} <em>*</em></th>
+			<td>
+				<select name="job_location" class="category">
+						<option loop="$location_list =>$key, $location" value="{$location->location_srl}">{$location->description}</option>
+				</select>
+			</td>
+		</block>
+		<tr>
+			{@ $today = date('Y-m-d', time());}
+			<th scope="row">{$lang->open_date} <em>*</em></th>
+			<td class="extra_fields">
+				<input type="text" name="open_date" value="{$today}"|cond="!$job_info->regdate" value="{zdate($job_info->regdate,'Y-m-d', false)}"|cond="$job_info->regdate" class="text date_input" title="{$lang->about_open_date}" id="open_date" />
+				<input type="button" value="Clear" class="clear_button" onClick="jQuery(function($){$('#open_date').val('');});" />
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">{$lang->close_date} </th>
+			<td class="extra_fields">
+				<input type="text" name="close_date" value="{zdate($job_info->close_date,'Y-m-d', false)}" class="text date_input" title="{$lang->about_close_date}" id="close_date" />
+				<input type="button" value="Clear" class="clear_button" onClick="jQuery(function($){$('#close_date').val('');});" />
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">{$lang->contact_email} </th>
+			<td class="extra_fields"><input type="text" class="email_address" value="{$module_info->contact_mail}"|cond="!$job_info->contact_email" value="{$job_info->contact_email}"|cond="$job_info->contact_email" name="contact_email"></td>
+		</tr>
+		<tr>
+			<th scope="row">{$lang->contact_address} </th>
+			<td class="extra_fields"><textarea  rows="5" name="contact_address">{$job_info->contact_address}</textarea></td>
+		</tr>
+        <tr cond="$extra_keys" loop="$extra_keys =>$key, $val">
+            <th scope="row">{$val->name} <!--@if($val->is_required=='Y')--><em>*</em><!--@end--></th>
+            <td class="extra_fields">{$val->getFormHTML()}</td>
+        </tr>
+		 <tr>
+            <th scope="row">Job Description <em>*</em></th>
+            <td>{$oDocument->getEditor()}</td>
+        </tr>
+    </table>
+	<div class="btnArea">
+		<span class="btn"><input type="submit" value="{$lang->cmd_registration}" /></span>
+		<span class="btn"><button type="button" onclick="location.href='{getUrl('act','')}'"|cond="!$document_srl"  onclick="location.href='{getUrl('act','dispRecruitJobdetail', 'document_srl', $document_srl)}'"|cond="$document_srl">{$lang->cmd_cancel}</button></span>
+	</div>
+</form>
+
+<script type="text/javascript">
+	jQuery(function($) {
+		 var pickerOpts = {
+			changeMonth: true,
+			changeYear: true,
+			dateFormat: "yy-mm-dd"
+		};
+		$( "#open_date" ).datepicker(pickerOpts);
+		$( "#close_date" ).datepicker(pickerOpts);
+	});
+</script>
+
+<!--#include("_footer.html")-->

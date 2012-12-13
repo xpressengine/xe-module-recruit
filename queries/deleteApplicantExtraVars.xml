@@ -1,0 +1,8 @@
+<query id="deleteApplicantExtraVars" action="delete">
+    <tables>
+        <table name="recruit_application" />
+    </tables>
+    <conditions>
+        <condition operation="in" column="comment_srl" var="comment_srl" notnull="notnull" filter="number" />
+    </conditions>
+</query>

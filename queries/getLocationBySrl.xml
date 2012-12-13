@@ -1,0 +1,14 @@
+<query id="getLocationList" action="select">
+    <tables>
+    	<table name="recruit_location" />
+    </tables>
+    <columns>
+    	<column name="*" />
+    </columns>
+    <conditions>
+         <condition operation="equal" column="location_srl" var="location_srl" filter="number" />
+    </conditions>
+	<navigation>
+		<list_count var="list_count" default="1" />
+    </navigation>
+</query>

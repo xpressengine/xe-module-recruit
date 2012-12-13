@@ -1,0 +1,11 @@
+<query id="updateLocation" action="update">
+    <tables>
+        <table name="recruit_location" />
+    </tables>
+    <columns>
+        <column name="description" var="location" notnull="notnull" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="location_srl" var="location_srl" notnull="notnull" filter="number" />
+    </conditions>
+</query>

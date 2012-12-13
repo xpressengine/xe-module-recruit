@@ -1,0 +1,88 @@
+<!--@if(count($applicant_list))-->
+<div class="feedbackList" id="reply">
+	<div class="replyList">
+		<table cellspacing="0" border="1" class="recruitList" summary="List of Articles">
+			<colgroup>
+				<col width="50px">
+				<col width="15%">
+				<col width="20%">
+				<col width="12%">
+				<col width="12%">
+				<col width="100px">
+				<col width="100px">
+				<col>
+			</colgroup>
+		    <thead>
+		    <tr>
+		        <th scope="col" cond="$logged_info->is_admin == 'Y'">
+                    <input type="checkbox" title="Check All" onclick="XE.checkboxToggleAll(); return false;">
+                </th>
+		        <th scope="col"><strong>{$lang->applicant_name}</strong></th>
+		        <th scope="col"><strong>{$lang->applicants_email}</strong></th>
+				<th scope="col"><strong>{$lang->phone_no}</strong></th>
+		        <th scope="col"><strong>{$lang->applicants_date}</strong></th>
+				<th scope="col"><strong>{$lang->applicants_age}</strong></th>
+				<th scope="col"><strong>{$lang->applicants_cv}</strong></th>
+		        <th scope="col"></th>
+		    </tr>
+		    </thead>
+		    <tbody>
+		    {@$i = 2}
+		    <!--@foreach($applicant_list as $key => $applicant)-->
+		    <tr class="bg{$i} applicationRow">
+		        <td class="checkbox" cond="$logged_info->is_admin == 'Y'"><input class="cartCheckBox" type="checkbox" name="cart" value="{$applicant->comment_srl}"/></td>
+		        <td class="author">{$applicant->applicant_name}</td>
+		        <td><a href="mailto:{$applicant->email_address}" class="email_link">{$applicant->email_address}</td>
+				 <td>{$applicant->phone_no}</td>
+		        <td>{zdate($applicant->last_update, 'Y-m-d', false)}</td>
+				<td>{$applicant->age}</td>
+				<td>
+					<a cond="$applicant->cv" href="{$applicant->cv->download_url}" class="btn_download"></a>
+					<span cond="!$applicant->cv">-</span>
+				</td>
+		        <td style="text-align:right">
+		            <span class="deleteComment btn"><a href="" onclick="showDeleteApplicant('{$applicant->comment_srl}','delete_applicant', false); return false;">{$lang->cmd_delete}</a></span>
+                    <span class="btn"><a href="" onclick="return false;" data="{$applicant->comment_srl}" class="view_applicant_detail">{$lang->cmd_detail}</a></span>
+                </td>
+		    </tr>
+			<tr id="{$applicant->comment_srl}" class="bg{$i} applicationRow applicant_extra">
+				<td></td>
+				<td colspan="7" class="applicant_detail">
+					<span class="title">{$lang->self_introduction}:</span>
+					<span class="self_intro">{$applicant->content}</span><br/><br/>
+					<span class="title">{$lang->applicants_cv}:</span>
+					<span><a cond="$applicant->cv" href="{$applicant->cv->download_url}" class="email_link">{$applicant->cv->source_filename}</a></span>
+				</td>
+			</tr>
+		    {@$i = ($i+1)%2 ? 1:2;}
+		    <tr class="detailRow bg1 detail_{$applicant->comment_srl}" style="display:none;">
+                <td colspan="5" style="text-align:left;"></td>
+            </tr>
+		    <!--@end-->
+		    </tbody>
+		</table>
+    </div>
+
+    <div class="pagination a1 applicant_pagination" cond="$applicant_list">
+        <a href="{getUrl('cpage',1)}#comment" class="prevEnd">{$lang->first_page}</a>
+        <!--@while($page_no = $page_navigation->getNextPage())-->
+             <!--@if($page == $page_no || (!$page && $page_no == 1))-->
+                <strong>{$page_no}</strong>
+            <!--@else-->
+                <a href="{getUrl('page',$page_no,'document_srl',$document_srl,'division',$division,'last_division',$last_division)}">{$page_no}</a>
+            <!--@end-->
+        <!--@end-->
+        <a href="{getUrl('page',$oDocument->comment_page_navigation->last_page)}" class="nextEnd">{$lang->last_page}</a>
+    </div>
+
+    <div cond="$logged_info->is_admin == 'Y'" class="btnArea delete_applicants_btn">
+        <span class="etc">
+            <span class="deleteJobs btn"><a href="#" onclick="doDeleteGroupApplicant('delete_applicant');return false;">{$lang->cmd_deleteApplicants}</a></span>
+        </span>
+    </div>
+
+</div>
+<div class="proWindow" id="proWindow">
+    <include target="delete_applicant_form.html" />
+</div>
+<!--@end-->

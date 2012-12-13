@@ -1,0 +1,27 @@
+<include target="_header.html" />
+<load target="filter/delete_recruit.xml" />
+<form action="./" method="get">
+	<input type="hidden" name="act" value="procRecruitAdminDeleteRecruit" />
+	<input type="hidden" name="page" value="{$page}" />
+	<input type="hidden" name="module_srl" value="{$module_info->module_srl}" />
+    <h2 class="h2">{$lang->confirm_delete}</h2>
+	<div class="table">
+		<table width="100%" border="1" cellspacing="0" class="delete_recruit">
+		<tr>
+			<th scope="row">{$lang->module_name}</th>
+			<td >{$module_info->mid}</td>
+		</tr>
+		<tr>
+			<th scope="row">{$lang->module}</th>
+			<td>{$module_info->module}</td>
+		</tr>
+		<tr>
+			<th scope="row">{$lang->job_count}</th>
+			<td>{$module_info->document_count}</td>
+		</tr>
+		</table>
+	</div>
+	<div class="btnArea">
+		<span class="btn"><input type="submit" value="{$lang->cmd_delete}" /></span>
+	</div>
+</form>

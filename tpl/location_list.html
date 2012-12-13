@@ -1,0 +1,68 @@
+<include target="_header.html" />
+<div id="content_categories">
+	<div class="contentHeader categoryHeader">
+		<h3 class="h3">{$lang->Location}</h3>
+	</div>
+
+	<form method="post" class="locationList" action="./">
+		<input type="hidden" value="procRecruitAdminInsertLocation" name="act">
+		<input type="hidden" name="module_srl" value="{$module_info->module_srl}" />
+		<input type="hidden" name="mid" value="{$module_info->mid}" />
+		<input type="hidden" name="type" value="" >
+		<input type="hidden" name="location_srl" value="" />
+	    <!--<input type="hidden" value="{getUrl('module','admin','act','dispRecruitAdminLocation')}" name="error_return_url"/>
+        <input type="hidden" value="" name="mid">
+        <input type="hidden" value="" name="vid">
+        <input type="hidden" value="insertExtraVar" name="ruleset">
+        <input type="hidden" value="document" name="module">
+        <input type="hidden" value="procDocumentAdminInsertExtraVar" name="act">
+        <input type="hidden" value="{$module_srl}" name="module_srl">
+        <input type="hidden" value="{$location->idx}" name="var_idx">
+        <input type="hidden" value="{getUrl('module','admin','act','dispRecruitAdminLocation')}" name="success_return_url">
+        <input type="hidden" value="{$location->default}" name="default" class="defaultValue">
+        <input type="hidden" value="{$location->search}" name="search">
+        <input type="hidden" value="{$location->type}" name="type" >
+        <input type="hidden" value="Location" name="name">
+        <input type="hidden" value="Location" name="eid">
+        <input type="hidden" value="{$location->desc}" name="desc">-->
+
+		{@$count = count($recruit_locations);}
+		<p class="summary">{sprintf($lang->total_location_result, $count)}</p>
+
+
+		<fieldset class="tSum">
+			<div class="tHeader">
+				<span class="aLeft"> <label class="tagSort">{$lang->location} </label></span>
+				<span class="aRight"><label>{$lang->job_count}</label></span>
+			</div>
+			<ul class="selectItems">
+				<li loop="$recruit_locations=> $key,$location" class="hover"|cond="$category->title==$selected_category->title">
+				    <a href="#" onclick="return false;" class="tWord" data="{$location->location_srl}" >{$location->description}</a>
+				</li>
+			</ul>
+
+		</fieldset>
+
+		<fieldset class="tModify">
+			<legend>{$lang->tagModify}</legend>
+			<dl class="tagName">
+				<dt>{$lang->location} :</dt>
+				<dd>
+					<input type="text" class="inputText" name="location" value="{$selected_category->title}" />
+					<span class="cgBtn cgBtnAdd"><button type="button" onclick="addItem()">{$lang->cmd_add}</button></span>
+					<span class="cgBtn cgBtnModify" style="display:none"><button type="button" onclick="ModifyItem()">{$lang->cmd_modify}</button></span>
+					<span class="cgBtn cgBtnDelete" style="display:none"><button type="button" onclick="deleteItem()">{$lang->cmd_delete}</button></span>
+				</dd>
+			</dl>
+			<dl cond="$with_used_tag_list" class="tagFamily">
+				<dt>{$lang->tag_with_tags}</dt>
+				<!--@foreach($with_used_tag_list as $k => $v)-->
+					<!--@if($v->tag != $selected_tag)-->
+						<dd><a href="{getUrl('selected_tag', $v->tag)}">{$v->tag}</a> ({$v->count})</dd>
+					<!--@end-->
+				<!--@end-->
+			</dl>
+		</fieldset>
+	</form>
+</div>
+

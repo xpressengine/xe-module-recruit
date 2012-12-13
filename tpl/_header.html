@@ -1,0 +1,34 @@
+<load target="js/recruit_admin.js" />
+<load target="css/recruit_admin.css" />
+<h1 class="h1">{$lang->recruit_management}</h1>
+
+<block cond="$module_info">
+	<block cond="$module_info->mid && $act != 'dispRecruitAdminDelete'">
+		<h2 class="h2">
+			{$module_info->mid}<block cond="$module_info->is_default=='Y' ">{$lang->is_default}</block>
+			|
+			<a href="{getSiteUrl($module_info->domain,'','mid',$module_info->mid)}" target="_blank">View</a>
+		</h2>
+	</block>
+	<div class="cnb">
+		<ul>
+			<li cond="$module=='admin'" class="active"|cond="$act=='dispRecruitAdminList'"><a href="{getUrl('act','dispRecruitAdminList','module_srl','')}">{$lang->cmd_recruit_list}</a></li>
+			<li cond="$module!='admin'"><a href="{getUrl('act','')}">{$lang->cmd_back}</a></li>
+            <li class="active"|cond="$act=='dispRecruitAdminCreate'">
+                <!--@if($module_info->mid && $act != 'dispRecruitAdminDelete')-->
+                <a href="{getUrl('act','dispRecruitAdminCreate')}">{$lang->cmd_view_info}</a>
+                <!--@else-->
+                <a href="{getUrl('act','dispRecruitAdminCreate','module_srl','')}">{$lang->cmd_create_recruit}</a>
+                <!--@end-->
+            </li>
+			<block cond="$module_srl && $act != 'dispRecruitAdminDelete'">
+				<li class="active"|cond="$act=='dispRecruitAdminCategoryInfo'"><a href="{getUrl('act','dispRecruitAdminCategoryInfo')}">{$lang->cmd_manage_category}</a></li>
+				<li cond="$module_info->use_location == 'Y'" class="active"|cond="$act=='dispRecruitAdminLocation'"><a href="{getUrl('act','dispRecruitAdminLocation')}">{$lang->cmd_manage_location}</a></li>
+				<li class="active"|cond="$act=='dispRecruitAdminExtraVars'"><a href="{getUrl('act','dispRecruitAdminExtraVars')}">{$lang->extra_vars}</a></li>
+				<li class="active"|cond="$act=='dispRecruitAdminGrantInfo'"><a href="{getUrl('act','dispRecruitAdminGrantInfo')}">{$lang->cmd_manage_grant}</a></li>
+				<li class="active"|cond="$act=='dispRecruitAdminAdditionSetup'"><a href="{getUrl('act','dispRecruitAdminAdditionSetup')}">{$lang->cmd_addition_setup}</a></li>
+			</block>
+		</ul>
+	</div>
+</block>
+<div class="infoText">{nl2br($lang->about_rescruit)}</div>

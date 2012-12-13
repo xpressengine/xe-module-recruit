@@ -1,0 +1,27 @@
+<query id="getJobList" action="select">
+    <tables>
+		<table name="documents" alias="docs"/>
+		<table name="recruit_jobs" alias="jobs"/>
+    </tables>
+    <columns>
+    	<column name="docs.*" />
+		<column name="jobs.*" />
+    </columns>
+    <conditions>
+		<condition operation="equal" column="docs.module_srl" var="module_srl" filter="number" />
+		<condition operation="equal" column="docs.document_srl" var="jobs.document_srl" filter="number" pipe="and" />
+		<condition operation="equal" column="docs.category_srl" var="category_srl" filter="number" pipe="and" />
+		<condition operation="equal" column="jobs.location_srl" var="location_srl" filter="number" pipe="and" />
+		<condition operation="more" column="regdate" var="regdate" pipe="and"/>
+		 <group pipe="and">
+            <condition operation="like" column="docs.title" var="search_keyword" />
+            <condition operation="like" column="docs.content" var="search_keyword" pipe="or" />
+        </group>
+    </conditions>
+    <navigation>
+		<index var="sort_index" default="docs.regdate" order="desc" />
+		<list_count var="list_count" default="20" />
+		<page_count var="page_count" default="10" />
+		<page var="page" default="1" />
+    </navigation>
+</query>

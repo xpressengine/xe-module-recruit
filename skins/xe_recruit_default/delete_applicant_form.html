@@ -1,0 +1,17 @@
+<form action="./" method="post">
+	<input type="hidden" name="act" value="procRecruitDeleteApplicant" />
+	<input type="hidden" name="mid" value="{$mid}" />
+    <input type="hidden" name="page" value="{$page}" />
+    <div class="deleteApplicantForm" id="delete_applicant">
+        <span class="modalWindow"></span>
+        <div class="proLayer">
+            <h3 id="delete_single_applicant">{$lang->confirm_delete_applicant}</h3>
+			<h3 id="delete_group_applicants">{$lang->confirm_delete_applicants}</h3>
+        	<input type="hidden" name="comment_srl" id="deleteCommentFormSrl" value="" />
+        	<div>
+        		<span class="btn"><input type="submit" value="{$lang->cmd_delete}" /></span>
+        		<span class="btn"><button type="button" onclick="cancelDelete()">{$lang->cmd_cancel}</button></span>
+        	</div>
+        </div>
+    </div>
+</form>

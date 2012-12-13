@@ -1,0 +1,8 @@
+<table name="recruit_jobs">
+    <column name="document_srl" type="number" size="11" notnull="notnull" index="idx_document_srl" />
+	<column name="module_srl" type="number" size="11" notnull="notnull" index="idx_module_srl" />
+	<column name="location_srl" type="number" size="11" />
+    <column name="contact_email" type="varchar" size="250" />
+    <column name="contact_address" type="text" />
+    <column name="close_date" type="date" index="idx_close_date"/>
+</table> 

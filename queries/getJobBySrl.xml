@@ -1,0 +1,17 @@
+<query id="getJobBySrl" action="select">
+    <tables>
+		<table name="documents" alias="docs"/>
+		<table name="recruit_jobs" alias="jobs"/>
+    </tables>
+    <columns>
+    	<column name="docs.*" />
+		<column name="jobs.*" />
+    </columns>
+    <conditions>
+		<condition operation="equal" column="docs.document_srl" var="document_srl" filter="number" />
+		<condition operation="equal" column="docs.document_srl" var="jobs.document_srl" filter="number" pipe="and" />
+    </conditions>
+    <navigation>
+		<list_count var="list_count" default="1" />
+    </navigation>
+</query>

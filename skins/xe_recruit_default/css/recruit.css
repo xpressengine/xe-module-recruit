@@ -1,0 +1,450 @@
+@charset "utf-8";
+/* NHN (developers@xpressengine.com) */
+/* Recruit Reset */
+.recruit{font-family:Tahoma, Sans-serif;line-height:normal;font-size:12px}
+.recruit .iText,
+.recruit textarea,
+.recruit select{border:1px solid}
+.recruit label{cursor:pointer}
+.recruit img{border:0}
+.recruit .document_popup_menu,
+.recruit .comment_popup_menu{text-align:right;font-size:11px}
+.recruit .document_popup_menu{margin:1em 0}
+.recruit .comment_popup_menu{margin:1em 0}
+.recruit .document_popup_menu a,
+.recruit .comment_popup_menu a{text-decoration:underline}
+.recruit .hr{display:none}
+.recruit a{text-decoration:none}
+.recruit a:hover,
+.recruit a:active,
+.recruit a:focus{text-decoration:underline}
+/* Recruit Header */
+.recruitHeader *{margin:0 0 20px 0;padding:0}
+.recruitHeader a{text-decoration:none}
+.recruitHeader a:hover,
+.recruitHeader a:active,
+.recruitHeader a:focus{text-decoration:underline}
+.recruitHeader .recruitTitle{letter-spacing:-.1em;margin-bottom:10px;border-bottom:3px solid;zoom:1;
+background-repeat:no-repeat;background-position:left 8px}
+.recruitHeader .recruitTitle:after{content:"";display:block;clear:both}
+.recruitHeader .recruitTitleText{font-size:18px;float:left;clear:both;margin-bottom:-3px;padding:5px 15px 5px 5px;border-bottom:3px solid;background-repeat:no-repeat;background-position:right bottom}
+.recruitHeader .recruitTitleText a{text-decoration:none}
+.recruitHeader .recruitTitleText em{font-style:normal;font-weight:normal}
+.recruitHeader .recruitDescription{padding:7px 15px;-moz-border-radius:3px;-webkit-border-radius:3px;position:relative}
+
+/* recruit Information */
+.recruitInformation{width:100%;padding:10px 0;font-size:1em;line-height:normal;zoom:1}
+.recruitInformation *{margin:0;padding:0}
+.recruitInformation:after{content:"";display:block;float:none;clear:both}
+.recruitInformation ul{overflow:hidden}
+.recruitInformation li{list-style:none;left:-1px;display:block;float:left;padding:0 7px;background-repeat:no-repeat;background-position:left center}
+.recruitInformation strong{font:bold 11px Tahoma}
+.recruitInformation .infoLeft{padding-left:18px;float:left;background-repeat:no-repeat;background-position:left center}
+.recruitInformation .infoRight{float:right}
+.recruitInformation .infoRight li.icon{padding:0;margin-right:3px}
+.recruitInformation .infoRight li.icon a{display:block;float:left;width:12px;height:12px;overflow:hidden;background-repeat:no-repeat}
+.recruitInformation .infoRight li.icon a span{display:block;width:12px;height:12px;z-index:-1;visibility:hidden}
+.recruitInformation .infoRight li.rss a{background-position:0 0}
+.recruitInformation .infoRight li.tag_info a{background-position:-12px 0}
+.recruitInformation .infoRight li.listTypeClassic a{background-position:-24px 0}
+.recruitInformation .infoRight li.listTypeZine a{background-position:-36px 0}
+.recruitInformation .infoRight li.listTypeGallery a{background-position:-48px 0}
+.recruitInformation .infoRight li.contributors a{background-position:-60px 0}
+
+/* recruit List Form */
+.recruitListForm{margin:0;line-height:normal}
+.recruitListForm *{margin:0;padding:0}
+.recruitListForm fieldset{border:0;clear:both}
+.recruitListForm fieldset:after{content:"";display:block;float:none;clear:both}
+.recruitListForm legend{position:absolute;width:0;height:0;overflow:hidden;font:0/0 Sans-serif;visibility:hidden}
+.recruitListForm em,
+.recruitListForm strong{font-style:normal}
+.recruitListForm strong.trackback{color:#423CC4}
+/* recruit List */
+.recruitList{border:0;border-top:1px solid;width:100%}
+.recruitList a{text-decoration:none}
+.recruitList a:hover,
+.recruitList a:active,
+.recruitList a:focus{text-decoration:underline}
+.recruitList .inputCheck{width:13px;height:13px}
+.recruitList .jumpTo{float:left}
+.recruitList .jumpTo *{vertical-align:middle;*vertical-align:top}
+.recruitList .jumpTo select{height:20px;font-size:12px;*margin-right:5px}
+.recruitList .jumpTo button{width:22px;height:20px;line-height:18px;_line-height:normal;border:1px solid;-moz-border-radius:3px;-webkit-border-radius:3px;margin:0;padding:0;text-align:center;background-repeat:no-repeat;font-size:11px;cursor:pointer;overflow:visible}
+.recruitList .meta{position:relative;overflow:hidden;margin:0 0 5px 0;padding:0;list-style:none;white-space:nowrap}
+.recruitList .meta li{position:relative;left:-10px;display:inline;padding:0 5px 0 10px;background-repeat:no-repeat;background-position:left center;font-size:11px}
+.recruitList .meta li.author{font-size:11px}
+.recruitList .meta li.date{font:9px Tahoma}
+.recruitList .meta li em{font-size:9px}
+.recruitList .replyNum,
+.recruitList .trackbackNum{font:9px Verdana}
+.recruitList th{border:0;border-bottom:1px solid;padding:6px;*padding:8px 6px 6px 6px;white-space:nowrap;text-align:center;line-height:normal;font-weight:normal}
+.recruitList th.title{width:100%}
+.recruitList th.myTitle{width:30%}
+.recruitList th a .sort{vertical-align:middle;margin:0 5px}
+.recruitList td{border:0;border-bottom:1px solid;padding:8px 6px 7px 6px;*padding:8px 6px 6px 6px;white-space:nowrap;text-align:center;line-height:normal;vertical-align:top; vertical-align: middle;}
+.recruitList td.notice{font-size:11px;font-weight:bold}
+.recruitList td.num{font:9px Tahoma}
+.recruitList td.check{font:11px Tahoma}
+.recruitList td.title{width:100%;white-space:normal;text-align:left}
+.recruitList td.title img{vertical-align:middle;margin:0 1px}
+.recruitList td.title .author{font-size:11px}
+.recruitList td.author{font-size:11px;}
+.recruitList td.replies{font:9px Tahoma}
+.recruitList td.reading{font:9px Tahoma}
+.recruitList td.recommend{font:bold 9px Tahoma}
+.recruitList td.date{font:9px Tahoma}
+.recruitList td.summary{text-align:left;border-top-style:dotted;white-space:normal}
+.recruitList td.summary .thumb{display:block;float:left;padding:2px;border:1px solid;margin-right:10px}
+.recruitList td.summary .thumb img{display:block}
+.recruitList td.lastReply{text-align:left;font-size:11px}
+.recruitList td .notice{font-size:11px;padding-right:7px;margin-right:2px;background-repeat:no-repeat;background-position:right center}
+.recruitList td .category{font-weight:normal;font-size:11px;padding-right:7px;margin-right:2px;background-repeat:no-repeat;background-position:right center}
+.recruitList td .replyAnchor{position:relative;font-size:9px}
+.recruitList td .by{font:9px Tahoma}
+.recruitList.webZine tr.bg1 td,
+.recruitList.webZine tr.bg2 td{padding:22px 6px 22px 6px;*padding:22px 6px 21px 6px}
+.recruitList.webZine td.title p.title{margin-bottom:9px}
+.recruitList.webZine td.title p.title .category{font-size:12px}
+.recruitList.webZine td.title p.title a.title{font-weight:bold}
+.recruitList.webZine td.title p.summary{line-height:18px;margin-bottom:8px}
+.recruitList.webZine td.title p.summary a{text-decoration:none}
+.recruitList.webZine td.title .thumb{float:right;clear:right;border:1px solid;padding:8px;margin-left:50px}
+.recruitList.webZine td.title .by{font:9px Tahoma}
+.thumbList{border-bottom:1px solid;border-top:0;zoom:1;margin-right:-30px;padding:25px 0 0 0}
+.thumbList:after{content:"";display:block;clear:both}
+.thumbList li{position:relative;margin:0 17px 10px 17px;padding:0;list-style:none;overflow:hidden;float:left;display:inline}
+.thumbList li .num{color:#888;font-size:9px;margin-bottom:6px}
+.thumbList li .thumb{position:relative;float:left;clear:both;overflow:hidden;padding:8px;margin-bottom:14px;border:1px solid}
+.thumbList li .thumb a{display:block;position:relative;zoom:1;text-decoration:none !important}
+.thumbList li .thumb a *{cursor:pointer}
+.thumbList li .thumb a img{display:block}
+.thumbList li .thumb a .text{position:absolute;left:0;top:50%;margin-top:-.8em;*margin-top:-1.5em;display:block;width:100%;text-align:center;font-size:2em;font-weight:bold;white-space:nowrap;letter-spacing:-1px}
+.thumbList li .thumb a .category{position:absolute;left:0;bottom:0;width:100%;overflow:hidden;padding:3px 0;white-space:nowrap;text-indent:5px;font-weight:normal;font-size:11px}
+.thumbList li .thumb a .noPhoto{display:inline-block;font-size:11px;text-align:center}
+.thumbList li .title{font-weight:bold;clear:both;white-space:nowrap;margin-bottom:3px}
+.thumbList li .title input{width:13px;height:13px;vertical-align:middle;white-space:nowrap}
+.thumbList li .summary{line-height:16px;margin-bottom:8px}
+.thumbList li .summary a{text-decoration:none}
+.thumbList li .meta{position:relative;white-space:normal;zoom:1;text-align:left;overflow:visible}
+.thumbList li .meta li{float:none;display:inline;margin:0;white-space:nowrap;zoom:1}
+.thumbList .lastReply{text-align:left;font-size:11px}
+.thumbList .lastReply a{display:block}
+.thumbList .by{font:9px Tahoma}
+/* recruit Navigation */
+.recruit .recruitNavigation{padding:30px 0;margin:-1px 0 0 0;text-align:center;border-top:1px solid;zoom:1;_zoom:0}
+.recruit .recruitNavigation:after{content:"";display:block;float:none;clear:both}
+.recruit .recruitNavigation .pagination{padding:5px 0}
+.recruit .recruitNavigation .btnLeft{float:left;text-align:left}
+.recruit .recruitNavigation .btnRight{float:right;text-align:right}
+/* Search Form */
+.recruitSearchForm{position:relative;margin:0;padding:1px 0;line-height:normal; margin: 10px 0 0;}
+.recruitSearchForm fieldset{border:0;clear:both;text-align:center;position:relative}
+.recruitSearchForm fieldset:after{content:"";display:block;float:none;clear:both}
+.recruitSearchForm fieldset *{vertical-align:top}
+.recruitSearchForm legend{position:absolute;width:0;height:0;overflow:hidden;font:0/0 Sans-serif;visibility:hidden}
+.recruitSearchForm select{font-size:12px;height:23px;border:1px solid}
+.recruitSearchForm .iText{width:140px;height:15px;padding:4px 4px 2px 4px;font-size:12px;*margin:-1px 0}
+.recruitSearchForm .infoEtc{position:absolute;top:7px;right:0}
+.recruitSearchForm .infoEtc li{display:inline}
+.recruitSearchForm .infoEtc li a{display:inline-block;height:11px;background-repeat:no-repeat;overflow:hidden}
+.recruitSearchForm .infoEtc li a span{position:absolute;width:0;height:0;overflow:hidden;font-size:0;line-height:0;visibility:hidden}
+.recruitSearchForm .infoEtc li.contributors a{width:12px;background-position:0 0}
+.recruitSearchForm .infoEtc li.tag a{width:42px;background-position:-11px 0}
+/* recruit Read */
+.recruitReadHeader{zoom:1; margin-bottom:10px;}
+.recruitReadHeader a{text-decoration:none}
+.recruitReadHeader a:hover,
+.recruitReadHeader a:active,
+.recruitReadHeader a:focus{text-decoration:underline}
+.recruitReadHeader:after{content:"";display:block;float:none;clear:both}
+.recruitReadHeader *{margin:0;/*padding:0*/}
+.recruitReadHeader .titleArea{zoom:1;padding:2px 0;/*border-top:1px solid;border-bottom:1px solid*/}
+.recruitReadHeader .titleArea:after{content:"";display:block;clear:both}
+.recruitReadHeader .titleArea .title{float:left;font-size:16px;margin-right:10px}
+.recruitReadHeader .titleArea .category{float:left;padding-left:10px;margin-top:4px;font-size:12px;background-repeat:no-repeat;background-position:left center}
+.recruitReadHeader .titleArea .sum{float:right;white-space:nowrap;margin-top:0px}
+.recruitReadHeader .titleArea .sum .read,
+.recruitReadHeader .titleArea .sum .vote{font-size:11px;margin-right:5px}
+.recruitReadHeader .titleArea .sum .num{font-size:9px}
+.recruitReadHeader .titleArea .sum .date{padding-left:10px;font-size:9px;background-repeat:no-repeat;background-position:left center}
+.recruitReadHeader .authorArea{zoom:1;padding:10px 0}
+.recruitReadHeader .authorArea:after{content:"";display:block;clear:both}
+.recruitReadHeader .authorArea .author{float:left;margin-right:10px}
+.recruitReadHeader .authorArea .ipAddress{float:left;font-size:9px;margin-top:3px}
+.recruitReadHeader .authorArea .permaLink{float:right;font-size:9px;margin-top:3px}
+.recruitReadBody{overflow:hidden;zoom:1}
+.recruitReadBody .xe_content{overflow:hidden}
+.recruitReadBody .xe_content a{text-decoration:underline}
+.recruitReadFooter .memberSignature{border:1px solid;padding:10px;margin:1em 0;overflow:hidden;zoom:1;clear:both;-moz-border-radius:5px;-webkit-border-radius:5px}
+.recruitReadFooter .memberSignature img.profile{margin:0 1em 0 0;border:1px solid}
+.recruitReadFooter .tag{margin:1em 0;clear:both}
+.recruitReadFooter .tag *{display:inline;margin:0;padding:0;font-size:11px;vertical-align:middle}
+.recruitReadFooter .tag dt{margin-right:10px}
+.recruitReadFooter .tag dd{margin-right:5px}
+.recruitReadFooter .trackbackURL{margin:1em 0;clear:both}
+.recruitReadFooter .trackbackURL *{display:inline;margin:0;padding:0}
+.recruitReadFooter .trackbackURL dt{margin-right:5px;font-size:11px}
+.recruitReadFooter .trackbackURL dd{font-size:9px;text-decoration:none}
+.recruitReadFooter .trackbackURL a{text-decoration:none}
+.recruitReadFooter .trackbackURL a:hover,
+.recruitReadFooter .trackbackURL a:active,
+.recruitReadFooter .trackbackURL a:focus{text-decoration:underline}
+.recruitRead .recruitNavigation{border-top:1px solid}
+/* Feedback List */
+/* Feedback List */
+.feedbackList{overflow:hidden;padding-top:15px;margin-bottom:10px; display:block}
+.feedbackList .feedbackHeader{font-weight:bold;margin-bottom:10px;font-size:1.5em}
+.feedbackList .replyList .item .author{font-size:1em;padding:0;margin:0;float:left}
+.feedbackList .trackbackList .item .author{font-size:1em;float:left;padding:0;margin:0}
+.feedbackList .trackbackList .item p{margin-bottom:10px}
+.feedbackList .replyList .item{overflow:hidden;zoom:1}
+.feedbackList .replyList .item img.commentProfileImage{float:left;display:block;margin-right:10px}
+.feedbackList .item{padding-top:10px;margin-bottom:10px;border-top:1px dashed}
+.feedbackList .item .indent{}
+.feedbackList .reply .indent{border-left:8px solid;padding-left:10px}
+.feedbackList .item .author a{font-size:1em}
+.feedbackList .item .comment_popup_menu{text-align:right;margin-bottom:10px}
+.feedbackList .item .comment_popup_menu a{text-decoration:underline}
+.feedbackList .item .itemContent{clear:both;margin:10px 0 0 0}
+.feedbackList .item .itemContent .xe_content a{text-decoration:underline}
+.feedbackList{overflow:hidden;padding-top:15px;margin-bottom:10px;border-top:1px solid}
+.feedbackList .feedbackHeader{float:left;font-weight:bold;margin:1em 1em .5em 0;font-size:16px}
+.feedbackList .feedbackHeader em{font-style:normal}
+.feedbackList .trackbackURL{position:relative;top:1.5em;float:left;font-size:9px}
+.feedbackList .trackbackURL a{text-decoration:none}
+.feedbackList .trackbackURL a:hover,
+.feedbackList .trackbackURL a:active,
+.feedbackList .trackbackURL a:focus{text-decoration:underline}
+.feedbackList .trackbackList,
+.feedbackList .replyList{clear:both}
+.feedbackList .item{position:relative;border-top:1px dashed;zoom:1}
+.feedbackList .item .indent{position:relative;zoom:1}
+.feedbackList .item .indent:after{content:"";display:block;clear:both}
+.feedbackList .item.itemReply .indent{padding-left:15px;background-repeat:no-repeat;background-position:0 1.2em}
+.feedbackList .item .author{margin:0 0 5px 0}
+.feedbackList .item .author a{font-size:12px;text-decoration:none}
+.feedbackList .item .author a:hover,
+.feedbackList .item .author a:active,
+.feedbackList .item .author a:focus{text-decoration:underline}
+/*.feedbackList .item .itemContent{position:relative;padding:1em 0 1em 120px;zoom:1;z-index:1}*/
+.feedbackList .item .itemContent:after{content:"";display:block;clear:both}
+.feedbackList .item .itemContent .xe_content{width:auto !important}
+.feedbackList .item .itemContent .xe_content *{margin-top:0}
+.feedbackList .item .itemContent .xe_content a{text-decoration:underline}
+.feedbackList .item .itemContent .option{position:relative;margin:1em 0;padding:0;list-style:none;white-space:nowrap;overflow:hidden;zoom:1;float:right}
+.feedbackList .item .itemContent .option li{position:relative;left:-1px;display:inline;padding:0 0 0 5px;background-repeat:no-repeat;background-position:left center;font-size:11px}
+.feedbackList .item .itemContent .option li.wouldYou{background:none}
+.feedbackList .item .itemContent .option li a{text-decoration:none}
+.feedbackList .item .itemContent .option li a:hover,
+.feedbackList .item .itemContent .option li a:active,
+.feedbackList .item .itemContent .option li a:focus{text-decoration:underline}
+.feedbackList .item .itemContent .delete{position:relative;display:inline-block;width:13px;height:13px;background-repeat:no-repeat;background-position:center center;vertical-align:middle}
+.feedbackList .item .itemContent .delete span{position:absolute;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden}
+.feedbackList .item.itemOnly{border-top:0}
+.feedbackList .item .itemAside{position:relative;float:left;width:100px;margin-right:-100px;padding:1em 0 0 0;zoom:1;text-align:left;z-index:2}
+.feedbackList .item .itemAside a{text-decoration:none}
+.feedbackList .item .itemAside a:hover,
+.feedbackList .item .itemAside a:active,
+.feedbackList .item .itemAside a:focus{text-decoration:underline}
+.feedbackList .item .itemAside img.profile{display:block;border:1px solid;margin-bottom:5px;width:80px;height:80px }
+.feedbackList .item .itemAside .meta{font-size:9px;margin:0 0 5px 0;white-space:nowrap}
+.feedbackList .item .itemAside .vote{margin:0;zoom:1;overflow:hidden}
+.feedbackList .item .itemAside .vote:after{content:"";display:block;clear:both}
+.feedbackList .item .itemAside .vote *{margin:0;padding:0}
+.feedbackList .item .itemAside .vote dt{position:relative;left:-5px;float:left;width:10px;height:9px;margin-right:2px;padding-left:5px;background-image:url(../images/common/iconLove.gif);background-repeat:no-repeat;overflow:hidden;border-left:1px solid #e5e5e5}
+.feedbackList .item .itemAside .vote dt.love{background-position:5px 1px}
+.feedbackList .item .itemAside .vote dt.hate{background-position:5px -19px}
+.feedbackList .item .itemAside .vote dt span{position:absolute;width:0;height:0;line-height:0;font-size:0;overflow:hidden;visibility:hidden}
+.feedbackList .item .itemAside .vote dd{position:relative;left:-5px;float:left;margin-right:5px;font-size:9px;font-weight:bold}
+.feedbackList .item .secretMessage{margin:0;padding:1em 3em}
+.feedbackList .item .secretMessage p{text-align:center;margin:1em 0;font-size:18px}
+.feedbackList .item .secretMessage dl{text-align:center;margin:1em 0}
+.feedbackList .item .secretMessage dt{font-weight:bold;display:inline}
+.feedbackList .item .secretMessage dd{margin:0;display:inline}
+.feedbackList .item .secretMessage dd .iText{padding:3px 4px;height:15px;vertical-align:middle;margin-right:5px}
+/* Attached File */
+.attachedFile{position:relative;float:left;width:100%}
+.attachedFile *{margin:0;padding:0;font-size:11px;vertical-align:middle}
+.attachedFile dt img{margin-right:10px}
+.attachedFile dt .fileToggle{border:0;padding:0;overflow:visible;cursor:pointer;font-size:11px;background:none;vertical-align:middle}
+.attachedFile dd{position:relative;margin-right:5px;margin-top:5px;}
+.attachedFile.open dd{display:block}
+.attachedFile ul.files{position:relative;margin:0 0 1em 0;padding:0;clear:both;list-style:none;text-align:left}
+.attachedFile ul.files *{display:inline-block;*display:inline;
+padding:0;margin:0;font-size:11px}
+.attachedFile ul.files li{position:relative;margin:0 10px 0 0}
+.attachedFile ul.files a{position:relative;background-repeat:no-repeat;background-position:left center;zoom:1;
+text-decoration:none !important}
+.attachedFile ul.files a .bubble{display:none;position:absolute;top:-20px;left:0;padding:2px 5px;z-index:100;white-space:nowrap}
+.attachedFile ul.files a:hover .bubble,
+.attachedFile ul.files a:active .bubble,
+.attachedFile ul.files a:focus .bubble{display:block}
+
+/* Time */
+.time{float:right;margin:0;padding:0}
+.time *{font-family:Tahoma;font-size:11px;display:inline;margin:0;padding:0}
+.time dt{z-index:2;display:inline;font-weight:bold}
+.time dd{z-index:1;left:-5px;display:inline;padding-left:3px;background-repeat:no-repeat;background-position:left center}
+/* recruit Write */
+.recruitWrite fieldset{border:0}
+.recruitWrite legend{position:absolute;width:0;height:0;overflow:hidden;font:0/0 Sans-serif;visibility:hidden}
+.recruitWrite .recruitWriteHeader{margin:0 0 1em 0}
+.recruitWrite .recruitWriteHeader *{vertical-align:middle}
+.recruitWrite .recruitWriteHeader select{font-size:12px;vertical-align:top;height:23px}
+.recruitWrite .recruitWriteHeader .iText{width:400px;padding:3px 4px;height:15px;font-size:12px;*margin-top:-1px}
+.recruitWrite .tag{clear:both;margin-bottom:10px;zoom:1}
+.recruitWrite .tag:after{content:"";display:block;float:none;clear:both}
+.recruitWrite .tag .iText{float:left;width:330px;padding:4px 4px 2px 4px;margin-right:10px;font-size:12px}
+.recruitWrite .tag p{float:left;margin:3px 0}
+/* Editor */
+.recruit .recruitEditor{border:1px solid;margin-bottom:20px;-moz-border-radius:5px;-webkit-border-radius:5px}
+.recruit .recruitEditor .commentEditor{margin:15px;zoom:1;
+position:relative}
+/* Editor Option */
+.recruit .editOption{margin:1em 0;text-align:left}
+.recruit .editOption *{vertical-align:middle}
+.recruit .editOption select{margin-right:10px;font-size:12px}
+.recruit .editOption label{margin-right:10px}
+.recruit .editOption .iText{padding:3px 4px;height:15px;margin:0 10px 5px 0;font-size:12px;vertical-align:middle}
+.recruit .editOption .iText.userName{width:100px}
+.recruit .editOption .iText.userPw{width:50px;font:11px Tahoma}
+.recruit .editOption .iText.emailAddress{width:140px;font:11px Tahoma}
+.recruit .editOption .iText.homePage{width:140px;font:11px Tahoma}
+/* Require Password */
+.recruit .requirePassword{text-align:center}
+.recruit .requirePassword fieldset{border:0;padding:3em 0 4em 0}
+.recruit .requirePassword h3{font-size:16px}
+.recruit .requirePassword .iText{height:15px;width:150px;padding:3px 4px}
+/* Extra Var Table */
+.extraVarsList{width:100%;border:0;border-bottom:1px solid;margin-bottom:15px}
+.extraVarsList caption{text-align:right; margin-bottom: 10px;}
+.extraVarsList em{font-style:normal;font-weight:normal}
+.extraVarsList th,
+.extraVarsList td{border:0;padding:5px 10px;text-align:left;border-top:1px solid;vertical-align:top}
+.extraVarsList th{white-space:nowrap}
+.extraVarsList td{width:100%}
+.extraVarsList td p{display:block;*display:block;margin:3px 0}
+.extraVarsList td *{vertical-align:middle}
+.extraVarsList td li{display:inline;margin-right:10px}
+.extraVarsList td .iText{padding:3px 4px;font-size:12px;width:96%;display:block}
+.extraVarsList td .inputNum{padding:3px 4px;font-size:12px;width:50px;border:1px solid}
+.extraVarsList td .inputCheck{width:13px;height:13px;margin-right:5px}
+.extraVarsList td select{font-size:12px}
+.extraVarsList td textarea{padding:3px 4px;font-size:12px;width:50%;display:block;overflow:auto}
+/* Tag Cloud */
+.tagCloud{padding:3em 0;border-top:1px solid;border-bottom:1px solid}
+.tagCloud *{margin:0;padding:0}
+.tagCloud ul{text-align:justify}
+.tagCloud li{display:inline;list-style:none;margin:0 5px}
+.tagCloud li.rank1 a{font-weight:bold;font-size:24px}
+.tagCloud li.rank2 a{font-weight:bold;font-size:18px}
+.tagCloud li.rank3 a{font-weight:bold;font-size:14px}
+.tagCloud li.rank4 a{font-size:12px}
+.tagCloud li.rank5 a{font-size:11px}
+/* 확장 변수 폼 */
+.extraVarsList tr td input,
+.extraVarsList tr td textarea{font-size:12px}
+.extraVarsList tr td.extra_fields .text, .recruitSearchForm .inputText {border:1px solid;border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;padding:3px;margin-right:10px;width:50%}
+.recruitSearchForm .inputText {width: 200px; margin-left: 2px;  margin-right: 2px; height:18px;}
+.extraVarsList tr td .email_address{border:1px solid;border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;padding:3px;margin-right:10px;width:300px}
+.extraVarsList tr td .homepage{border:1px solid;border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;padding:3px;margin-right:10px;width:300px}
+.extraVarsList tr td .tel{border:1px solid;border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;padding:3px;margin-right:10px;width:40px;margin-right:10px}
+.extraVarsList tr td .textarea{border:1px solid;border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;padding:3px;margin-right:10px;width:90%;height:80px}
+.extraVarsList tr td ul{margin:0;padding:0;list-style:none}
+.extraVarsList tr td ul li{display:inline-block;margin-right:10px}
+.extraVarsList tr td ul li input{margin-right:5px;vertical-align:middle}
+.extraVarsList tr td .date{border:1px solid;border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;padding:3px;margin-right:10px;width:100px}
+.extraVarsList tr td .address{border:1px solid;border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;padding:3px;margin-right:10px;width:300px}
+/* Pagination */
+.pagination{padding:15px 0;margin:0;text-align:center}
+.pagination *{margin:0;padding:0}
+.pagination img{border:0}
+.pagination a,
+.pagination strong{position:relative;display:inline-block;text-decoration:none;line-height:normal;color:#4d4d4d;font-family:Tahoma, Sans-serif;margin:0;padding:2px 6px;font-size:11px;vertical-align:middle}
+.pagination strong{color:#ff3636 !important;border:1px solid #e7e7e7}
+.pagination a.prev,
+.pagination a.prevEnd,
+.pagination a.next,
+.pagination a.nextEnd{font-weight:normal !important;margin:0 !important;white-space:nowrap;text-decoration:none !important;border:1px solid #e7e7e7;background-image:url(../images/common/arrowPagination.gif);background-repeat:no-repeat}
+.pagination a.prevEnd{padding-left:14px;background-position:left center}
+.pagination a.nextEnd{padding-right:14px;background-position:right center}
+
+p.no_job {text-align:center; line-height: 10; text-align: center; vertical-align: middle;}
+.addJobBtn {margin-bottom:0 !important; margin-top: -40px;}
+.recruitHeader {margin-bottom: 20px;}
+.recruitList th.date {font-weight: bold; color: #1978AD;}
+.recruitList th {background-color: #FFFFFF; background-image: url("../images/white/bgThDefault50.gif"); border-color: #FFFFFF; color: #333333;}
+.date_input {width:100px !important}
+
+.clear_button {-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+					   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff; box-shadow:inset 0px 1px 0px 0px #ffffff;  
+					   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) ); 
+					   background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+					   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf'); 
+					   background-color:#ededed; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; border:1px solid #dcdcdc; display:inline-block; color:#777777 !important; font-family:arial; font-size:12px !important;
+					   font-weight:bold; padding:2px 10px; text-decoration:none; text-shadow:1px 1px 0px #ffffff; }					   
+.clear_button:hover {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) ); background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% ); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed'); background-color:#dfdfdf; }
+.clear_button:active {position:relative;top:1px;}
+.job_link, .email_link {color: #245DC1 !important;}
+.return_url {font-size:12px;}
+.btn a {height:20px !important;}
+
+.btnArea .btn_applicant {background: url("../images/common/btn_dark.png") no-repeat scroll 0 0 #F7F7F7; display: block; float: right; height: 28px; padding: 0 0 0 20px; text-decoration: none; margin-left:5px;}
+.btnArea .btn_applicant span {background: url("../images/common/btn_dark.png") no-repeat scroll 100% 0 #F7F7F7;color: white; cursor: pointer; display: block; float: left; font-weight: bold; height: 22px; padding: 6px 20px 0 0;}
+.btnArea .btn_apply {background: url("../images/common/btn_blue.png") no-repeat scroll 0 0 transparent; display: block; float: right; height: 28px; padding: 0 0 0 20px; text-decoration: none;}
+.btnArea .btn_apply span {background: url("../images/common/btn_blue.png") no-repeat scroll 100% 0 transparent;color: white; cursor: pointer; display: block; float: left; font-weight: bold; height: 22px; padding: 6px 20px 0 0;}
+.application_form {border: 1px solid #C7C7C7 !important; border-radius: 5px 5px 5px 5px; box-shadow: 1px 1px 5px #808080; padding: 10px 20px 25px 20px; width: 95% !important;}
+span.application_title {font-size:16px; font-weight:bold; margin-right:10px;}
+.readonly {background-color:  #eeeeee !important}
+.btn_download {background: url("../images/common/sp_btn.gif") no-repeat scroll 0 0 transparent; display: inline-block; font-size: 11px; height: 18px; overflow: hidden;padding-left: 20px;}
+td.applicant_detail {text-align: left; padding-left:24px; font-size:11px;}
+td.applicant_detail span.title {font-weight: bold; margin-right: 10px; margin-bottom:10px; vertical-align: top;}
+tr.applicant_extra {display:none}
+.applicationRow td{vertical-align: middle}
+
+/* Application Form CSS*/
+.xm, .xm table, .xm input, .xm textarea, .xm select, .xm button {color: #333333;font-family: Tahoma,Geneva,sans-serif;font-size: 12px;}
+.xm .h1 {border-bottom-width: 4px;font-size: 24px;}
+.xm .h1, .xm .h2, .xm .h3, .xm .h4 {border-bottom-color: #CCCCCC;border-bottom-style: solid;position: relative;}
+.xm .form {margin: 1em 0;padding: 0;}
+.xm form ul {border-top: 2px solid #CCCCCC;list-style: none outside none;margin: 15px 0 0;padding: 0;position: relative;}
+.xm, .xm table, .xm input, .xm textarea, .xm select, .xm button {color: #333333;font-family: Tahoma,Geneva,sans-serif;font-size: 12px;}
+.xm .form li:first-child {border-top: 0 none;}
+.xm .form li {list-style:none;border:1px solid #ddd;border-left:0;border-right:0;margin:-1px 0;padding:10px 0;vertical-align:top;zoom:1}
+.xm .form .q {font-weight: bold;margin: 0 0 5px;}
+.xe_content p {margin: 0;}
+.xm p {line-height: 1.5;}
+.xm .form input[type="text"], .xm .form input[type="password"], .xm .form input[type="file"] {height: 22px;line-height: 22px;padding: 0 4px;vertical-align: middle;}
+.xm .form input[type="text"], .xm .form input[type="password"], .xm .form input[type="file"], .xm .form textarea {-moz-border-bottom-colors: none;-moz-border-left-colors: none;-moz-border-right-colors: none;-moz-border-top-colors: none;background: none repeat scroll 0 0 transparent;border-color: #B7B7B7 #E1E1E1 #E1E1E1 #B7B7B7;border-image: none;border-style: solid;border-width: 1px;margin: 2px 0;position: relative;width: 280px;}
+.xm .form textarea {width: 80%}
+.xm .form .last {border: none}
+.xm p.cv_p span {font-weight: normal !important; font-size:11px;}
+
+input::-webkit-input-placeholder {color: #999999 !important;}
+textarea:-moz-placeholder {color: #999999 !important;}
+textarea:-moz-placeholder {color: #999999 !important;}
+
+span.app_msg {margin-left: 20px; color: red}
+span.n_line {display:block; margin-left: 0px; margin-top:10px; font-weight:normal}
+.file_input {width:200px !important;}
+span.self_intro {display:inline-block; width:70%; white-space: normal;}
+td.job_description div {margin-bottom:20px;}
+label.red{color: red !important;}
+.attachedLabel {font-weight: bold;}
+td.job_title {text-align: left; padding-left: 40px;}
+select#job_category, select#job_location {min-width:90%; padding: 3px;}
+select#date_select {padding: 3px; height: 26px; font-family: sans-serif;}
+.btnArea .deleteJobs a{height: 24px !important;}
+.search_btn {height: 26px;}
+.addJob_btn {background: url("../images/common/btn_dark.png") no-repeat scroll 0 0 #F7F7F7; display: block; float: right; height: 28px; padding: 0 0 0 10px; right: 0; text-decoration: none; top: 0;}
+.addJob_btn span {background: url("../images/common/btn_dark.png") no-repeat scroll 100% 0 #F7F7F7; color: white; cursor: pointer; float: left; font-size: 12px; font-weight: bold; height: 22px; padding: 6px 10px 0 0;}
+
+.deleteForm, .deleteApplicantForm {display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 1000;}
+.deleteForm .proLayer,.deleteApplicantForm .proLayer {background-color: #FFFFFF; border: 2px solid #737373; left: 50%; margin: -93px 0 0 -162px; padding: 15px 25px; position: absolute; top: 50%; width: 350px; z-index: 9999;}
+.deleteForm .modalWindow,.deleteApplicantForm .modalWindow {background: none repeat scroll 0 0 #000000; height: 100%; left: 0; opacity: 0.3; position: absolute; top: 0; width: 100%; z-index: 1001;}
+.deleteForm h3, .deleteApplicantForm h3 {margin-bottom: 30px;}
+div.applicant_pagination {padding-bottom:0px !important;}
+div.delete_applicants_btn {margin-top: -15px;}
+
+           

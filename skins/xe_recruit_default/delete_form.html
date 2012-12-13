@@ -1,0 +1,17 @@
+<form action="./" method="post" ruleset="deleteJob" id="delete_job">
+	<input type="hidden" name="act" value="procRecruitDeleteJob" />
+	<input type="hidden" name="mid" value="{$mid}" />
+    <input type="hidden" name="page" value="{$page}" />
+    <input type="hidden" name="document_srl" id="deleteJobSrl" value="" />
+    <div class="deleteForm">
+        <span class="modalWindow"></span>
+        <div class="proLayer">
+            <h3 cond="$act !=  dispRecruitJobdetail">{$lang->confirm_delete_jobs}</h3>
+			<h3 cond="$act ==  dispRecruitJobdetail">{$lang->confirm_delete_job}</h3>
+        	<div>
+        		<span class="btn"><input type="submit" value="{$lang->cmd_delete}" /></span>
+        		<span class="btn"><button type="button" onclick="cancelDelete()">{$lang->cmd_cancel}</button></span>
+        	</div>
+        </div>
+    </div>
+</form>

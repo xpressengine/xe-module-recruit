@@ -1,0 +1,84 @@
+<!--#include("_header.html")-->
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+
+<div class="recruitReadHeader">
+	<div class="titleArea">
+		<a class="return_url" href="{getUrl('act','dispRecruitJobdetail', 'document_srl', Context::get('document_srl'))}" >{$lang->return_job}</a> >> <span><strong>{$lang->application_form}</strong></span>
+	</div>
+</div>
+
+<div class="xm application_form">
+<form action="./" method="post" class="form" enctype="multipart/form-data" ruleset="insertApplication" >
+<input type="hidden" name="act" value="procRecruitInsertApplicant">
+<input type="hidden" name="module_srl" value="{$module_info->module_srl}">
+<input type="hidden" name="mid" value="{$mid}">
+<input type="hidden" name="document_srl" value="{$document_srl}">
+<input type="hidden" name="comment_srl" value="{$application_info->comment_srl}">
+
+<span class="application_title">{$lang->application}:</span> <a class="job_link"  href="{getUrl('act','dispRecruitJobdetail', 'document_srl', Context::get('document_srl'))}"><strong>{$oDocument->get('title')}<strong></a>
+<span cond="$logged_info && $logged_info->member_srl == $application_info->member_srl" class="app_msg n_line">{$lang->already_applied}</span>
+<ul>
+	<li>
+		<p class="q">{$lang->email} <em>*</em></p>
+		<p class="a">
+			<input type="text" name="email_address" value="{$application_info->email_address}" cond="$application_info" readonly=readonly class="readonly"/>
+			<input type="text" name="email_address" value="{$logged_info->email_address}" cond="!$application_info" <!--@if($logged_info)-->readonly=readonly class="readonly"<!--@end--> />
+		</p>
+	</li>
+	<li>
+		<p class="q">{$lang->applicant_name} <em>*</em></p>
+		<p class="a">
+			<input type="text" name="applicant_name" value="{$application_info->applicant_name}" cond="$application_info"/>
+			<input type="text" name="applicant_name" value="{$logged_info->nick_name}" cond="!$application_info" />
+		</p>
+	</li>
+	<li>
+		<p class="q">{$lang->phone_no}</p>
+		<p class="a">
+			<input type="text" name="phone_number" value="{$application_info->get('phone_no')}"|cond="$application_info" />
+		</p>
+	</li>
+	<li>
+		<p class="q">{$lang->birthday}</p>
+		<p class="a">
+			<input type="text" class="date_input" name="birthday" value="{zdate($application_info->get('birth'), 'Y-m-d', false)}"|cond="$application_info" value="{zdate($logged_info->birthday, 'Y-m-d', false)}"|cond="!$application_info && $logged_info" id="birthday_input"/>
+			<input type="button" value="Clear" class="clear_button" onClick="jQuery(function($){$('#birthday_input').val('');});" />
+		</p>
+	</li>
+	<li>
+		<p class="q">{$lang->self_introduction}</p>
+		<p class="a">
+			<textarea name="self_introduction" rows="8" class="self_intro_textarea"  placeholder="{$lang->input_self_introduction}">{$application_info->content}</textarea>
+		</p>
+	</li>
+	<li class="last">
+		<p class="q cv_p">{$lang->cv_attach}   
+			<span cond="$file_config">( {$lang->max_file_size}:  <label class="red">{$file_config->allowed_filesize}M</label> <block cond="$file_config->allowed_filetypes">&nbsp;&nbsp;{$lang->accepted_format}:  <label class="red">{$file_config->allowed_filetypes}</label></block> )</span></p>
+		<p class="a">
+			<input type="file" name="fileName" value="" class="text file_input"  />
+			<span cond="$application_info->cv">{$lang->uploaded_cv}: </span><a cond="$application_info->cv" href="{$application_info->cv->download_url}" class="email_link">{$application_info->cv->source_filename}</a>
+		</p>
+	</li>
+</ul>
+<div class="btnArea">
+	<span class="btn"><input type="submit" value="{$lang->cmd_registration}"|cond="!$application_info"   value="{$lang->cmd_update}"|cond="$application_info" /></span>
+	<span class="btn"><button type="button" onclick="location.href='{getUrl('act','dispRecruitJobdetail', 'document_srl', $document_srl)}'">{$lang->cmd_cancel}</button></span>
+</div>
+</form>
+</div>
+
+<script type="text/javascript">
+	jQuery(function($) {
+		 var pickerOpts = {
+			changeMonth: true,
+			changeYear: true,
+			dateFormat: "yy-mm-dd",
+			yearRange: '1900:2012'
+		};
+		$( "#birthday_input" ).datepicker(pickerOpts);
+	});
+</script>
+
+<!--#include("_footer.html")-->

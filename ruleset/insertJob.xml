@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset version="1.5.0">
+	<fields>
+		<field name="title" required="true"/>
+		<field name="open_date" required="true"/>
+		<field name="content" required="true"/>
+	</fields>
+</ruleset>

@@ -1,0 +1,17 @@
+<load target="js/skin.js" />
+<!--%import("css/recruit.css")-->
+<!--%import("css/pagination.css")-->
+<!--%import("css/white.css")-->
+
+<div class="recruit">
+    <div class="recruitHeader">
+		<!--@if($module_info->browser_title)-->
+		<div class="recruitTitle">
+			<h2 class="recruitTitleText"><a href="{getUrl('','mid',$mid)}"><!--@if($module_info->recruit_title)-->{$module_info->recruit_title}<!--@else-->{$lang->recruit_center}<!--@end--><!--@if($module_info->sub_title)--> : <em>{$module_info->sub_title}</em><!--@end--></a></h2>
+		</div>
+		<!--@end-->
+
+		<!--@if($module_info->comment)-->
+		<p class="recruitDescription">{$module_info->comment}</p>
+		<!--@end-->
+    </div>

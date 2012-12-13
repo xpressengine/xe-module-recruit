@@ -1,0 +1,17 @@
+<include target="_header.html" />
+{$grant_content}
+<script>
+    jQuery(function($){
+        $('#fo_obj p').css('display','none');
+        $('#fo_obj h2').css('display','none');
+		$('#fo_obj ul').css('display','none');
+        $('#fo_obj select').each(function(ind,ele){
+            if(ele.name !== 'write_comment_default')
+            {
+                $(ele).parents('tr').css('display','none');
+            }
+        });
+		 $('#fo_obj th').width('200px');
+    });
+</script>
+<include target="_footer.html" />

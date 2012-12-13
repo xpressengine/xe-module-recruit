@@ -1,0 +1,18 @@
+<query id="getApplicantExtraVars" action="select">
+    <tables>
+    	<table name="recruit_applicants" />
+    </tables>
+    <columns>
+    	<column name="*" />
+    </columns>
+    <conditions>
+         <condition operation="in" column="member_srl" var="member_srl" filter="number" />
+         <condition operation="in" column="comment_srl" var="comment_srl" filter="number" />
+    </conditions>
+    <navigation>
+        <index var="sort_index" default="member_srl" order="desc" />
+        <list_count var="list_count" default="200" />
+        <page_count var="page_count" default="10" />
+        <page var="page" default="1" />
+    </navigation>
+</query>

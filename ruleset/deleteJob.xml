@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset version="1.5.0">
+	<fields>
+		<param name="mid" target="mid" />
+	</fields>
+</ruleset>
+

@@ -1,0 +1,10 @@
+<query id="insertLocation" action="insert">
+    <tables>
+        <table name="recruit_location" />
+    </tables>
+    <columns>
+        <column name="location_srl" var="location_srl" filter="number" notnull="notnull" />
+        <column name="module_srl" var="module_srl"  filter="number" />
+        <column name="description" var="location" default="" />
+    </columns>
+</query>

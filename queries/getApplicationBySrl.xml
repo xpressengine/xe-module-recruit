@@ -1,0 +1,17 @@
+<query id="getApplicationBySrl" action="select">
+    <tables>
+        <table name="comments" alias="comments" />
+		<table name="recruit_application" alias="application" />
+    </tables>
+    <columns>
+        <column name="comments.*" />
+		<column name="application.*" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="comments.comment_srl" var="comment_srl" />
+        <condition operation="equal" column="comments.comment_srl" var="application.comment_srl" pipe="and"/>
+    </conditions>
+    <navigation>
+        <list_count var="list_count" default="1" />
+    </navigation>
+</query>

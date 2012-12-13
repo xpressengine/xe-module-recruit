@@ -1,0 +1,8 @@
+<query id="deleteLocation" action="delete">
+    <tables>
+        <table name="recruit_location" />
+    </tables>
+    <conditions>
+        <condition operation="equal" column="location_srl" var="location_srl" notnull="notnull" filter="number" />
+    </conditions>
+</query>

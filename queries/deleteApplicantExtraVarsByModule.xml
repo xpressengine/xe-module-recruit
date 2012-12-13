@@ -1,0 +1,8 @@
+<query id="deleteApplicantExtraVarsByModule" action="delete">
+    <tables>
+        <table name="recruit_application" />
+    </tables>
+    <conditions>
+        <condition operation="in" column="module_srl" var="module_srl" notnull="notnull" filter="number" />
+    </conditions>
+</query>

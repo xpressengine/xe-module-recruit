@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <grants>
+        <grant name="write_comment" default="guest">
+            <title xml:lang="ko">Submit Application</title>
+			<title xml:lang="en">Submit Application</title>
+            <title xml:lang="zh-CN">申请工作</title>
+        </grant>
+    </grants>
+    <permissions />
+    <actions>
+        <!--view-->
+        <action name="dispJobList" type="view" standalone="true" index="true" />
+        <action name="dispJobWrite" type="view" standalone="true" />
+        <action name="dispRecruitJobdetail" type="view" standalone="true" />
+        <action name="dispRecruitAppdetail" type="view" standalone="true" />
+        <action name="dispRecruitModifyComment" type="view" standalone="true" />
+        <action name="dispRecruitTagList" type="view" standalone="true" />
+        <action name="disRecruitApply" type="view" standalone="true" />
+
+        <!--controller-->
+        <action name="procRecruitInsertJob" type="controller" standalone="true" ruleset="insertJob"/>
+        <action name="procRecruitDeleteJob" type="controller" standalone="true" />
+        <action name="procRecruitInsertApplicant" type="controller" standalone="true" ruleset="insertApplication" />
+        <action name="procRecruitDeleteApplicant" type="controller" standalone="true" />
+
+        <!--admin view-->
+        <action name="dispRecruitAdminList" type="view" standalone="true" admin_index="true" menu_name="recruit" menu_index="true" />
+        <action name="dispRecruitAdminReserved" type="view" standalone="true"  menu_name="recruit" />
+        <action name="dispRecruitAdminCreate" type="view" standalone="true"  menu_name="recruit" />
+        <action name="dispRecruitAdminCategoryInfo" type="view" standalone="true" menu_name="recruit" />
+        <action name="dispRecruitAdminExtraVars" type="view" standalone="true" menu_name="recruit"  />
+        <action name="dispRecruitAdminAdditionSetup" type="view" standalone="true" menu_name="recruit"  />
+        <action name="dispRecruitAdminSkinInfo" type="view" standalone="true" menu_name="recruit"  />
+        <action name="dispRecruitAdminDelete" type="view" standalone="true" menu_name="recruit"  />
+        <action name="dispRecruitAdminLocation" type="view" standalone="true" menu_name="recruit"  />
+        <action name="dispRecruitAdminGrantInfo" type="view" standalone="true" menu_name="recruit"  />
+
+        <!--admin controller-->
+        <action name="procRecruitAdminCreation" type="controller" standalone="true"  menu_name="recruit"/>
+        <action name="procRecruitAdminDeleteRecruit" type="controller" standalone="true"  menu_name="recruit"/>
+		<action name="procRecruitAdminInsertLocation" type="controller" standalone="true"  menu_name="recruit"/>
+
+        <!--mobile-->
+
+    </actions>
+    <menus>
+		<menu name="recruit" type="all">
+			<title xml:lang="en">Recruit</title>
+			<title xml:lang="ko">Recruit</title>
+			<title xml:lang="zh-CN">Recruit</title>
+		</menu>
+	</menus>
+</module>

@@ -1,0 +1,95 @@
+<!--#include("_header.html")-->
+
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+
+<div class="recruitRead">
+	<div class="recruitReadHeader">
+		<div class="titleArea">
+			<a class="return_url" href="{getUrl('act','dispJobList', 'document_srl', '')}" >{$lang->return_job_list}</a> >> <span><strong>{cut_str($job_info->title,20)}</strong></span>
+			<span class="sum">
+				<!--@if($oDocument->isEditable() && $logged_info->is_admin == 'Y')-->
+					<span class="btn"><a href="{getUrl('act','dispJobWrite','document_srl',$oDocument->document_srl,'comment_srl','')}">{$lang->cmd_modify}...</a></span>
+					<span class="btn"><a href="#" onclick="showDelete('{$oDocument->document_srl}');return false;">{$lang->cmd_delete}</a></span>
+				<!--@end-->
+			</span>
+		</div>
+	</div>
+	<table cellspacing="0" summary="Extra Form" class="extraVarsList">
+		<tr>
+			<th scope="row">{$lang->job_title}</th>
+			<td><strong>{$job_info->title}</strong><span cond="$logged_info && $application_info->member_srl == $logged_info->member_srl" class="app_msg">{$lang->already_applied}</span></td>
+		</tr>
+		 <tr cond="$module_info->use_category=='Y' && $category_list && $job_info->category_srl">
+			<th scope="row">{$lang->category}</th>
+			<td>{$category_list[$job_info->category_srl]->title}</td>
+		</tr>
+		<tr cond="$module_info->use_location=='Y' && $location_list && $job_info->location_srl">
+			<th scope="row">{$lang->location}</th>
+			<td>
+				{@ $oRecruitModel = &getModel('recruit');
+				  $recruit_location = $oRecruitModel->getLocationBySrl($job_info->location_srl);
+				}
+				{$recruit_location->description}
+			</td>
+		</tr>
+		</tr>
+			<th scope="row">{$lang->date}</th>
+			<td>{zdate($job_info->regdate, 'Y-m-d')} ~ {zdate($job_info->close_date, 'Y-m-d')}</td>
+		</tr>
+		<tr cond="$job_info->contact_email">
+			<th scope="row">{$lang->contact_email}</th>
+			<td><a href="mailto:{$job_info->contact_email}" class="email_link">{$job_info->contact_email}</a></td>
+		</tr>
+		<tr cond="$job_info->contact_address">
+			<th scope="row">{$lang->contact_address}</th>
+			<td>{$job_info->contact_address}</td>
+		</tr>
+		<!--@if($oDocument->isExtraVarsExists())-->
+			<!--@foreach($oDocument->getExtraVars() as $key => $val)-->
+			<tr cond="$val->eid != 'Location' || ($val->eid == 'Location' && $module_info->use_location == 'Y')">
+				<th >{$val->name}</th>
+				<td>{$val->getValueHTML()}&nbsp;</td>
+			</tr>
+			<!--@end-->
+		<!--@end-->
+		<tr>
+			<th scope="row">{$lang->job_description}</th>
+			<td class="job_description"> {$oDocument->getContent(false)}
+			<!--@if($oDocument->hasUploadedFiles())-->
+				<dl class="attachedFile">
+					<dt class="attachedLabel">{$lang->uploaded_file} :</dt>
+					<dd>
+						<ul class="files">
+							{@ $uploaded_list = $oDocument->getUploadedFiles() }
+							<!--@foreach($uploaded_list as $key => $file)-->
+							<li><a href="{getUrl('')}{$file->download_url}">{$file->source_filename} <span class="bubble">[File Size:{FileHandler::filesize($file->file_size)}/Download:{number_format($file->download_count)}]</span></a></li>
+							<!--@end-->
+						</ul>
+					</dd>
+				</dl>
+			<!--@end-->
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="btnArea" >
+	<a href="" onclick="return false;" class="btn_applicant" cond="$logged_info->is_admin=='Y'"><span>{$lang->applicants} ({count($applicant_list)})</span></a>
+    <a href="{getUrl('act','disRecruitApply','document_srl',$oDocument->document_srl)}" class="btn_apply"><span>{$lang->cmd_comment_registration}</span></a>
+</div>
+
+
+<!--@if($logged_info->is_admin=='Y')-->
+	<!--@if($oComment)-->
+		<!--#include("./comment.html")-->
+	<!--@else-->
+		<!--#include("./applicant_list.html")-->
+	<!--@end-->
+<!--@end-->
+
+<div class="proWindow" id="proWindow">
+    <include target="delete_form.html" />
+</div>
+<!--#include("_footer.html")-->

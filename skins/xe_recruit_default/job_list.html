@@ -1,0 +1,144 @@
+<include target="_header.html" />
+
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+
+<table cellspacing="0" border="1" class="recruitList" summary="List of Articles">
+	<colgroup>
+		<col width="60px" cond="$logged_info->is_admin == 'Y'">
+		<col width="60px">
+		<col width="40%">
+		<col width="15%"  cond="$module_info->use_category == 'Y' && $category_list">
+		<col width="15%"  cond="$module_info->use_location == 'Y' && $location_list">
+		<col width="100px">
+		<col width="100px">
+		<col width="80px" cond="$logged_info->is_admin == 'Y'">
+	</colgroup>
+    <thead>
+    <tr>
+		<th scope="col" cond="$logged_info->is_admin == 'Y'">
+            <input type="checkbox" title="Check All" onclick="XE.checkboxToggleAll({ doClick:true }); return false;">
+        </th>
+		<th scope="col"><strong>No.</strong></th>
+		<th scope="col" class="myTitle"><strong>{$lang->job_title}</strong></th>
+		<th scope="col" cond="$module_info->use_category == 'Y' && $category_list">
+			<select name="job_category" id="job_category">
+				<option value="0">{$lang->all_categories}</option>
+				<!--@foreach($category_list as $val)-->
+					<option <!--@if(!$val->grant)-->disabled="disabled"<!--@endif--> <!--@if($category_srl==$val->category_srl)-->selected<!--@end-->  value="{$val->category_srl}">
+						{str_repeat("&nbsp;&nbsp;",$val->depth)} {$val->title}
+					</option>
+				<!--@endforeach-->
+			</select>
+		</th>
+		<th scope="col" cond="$module_info->use_location == 'Y' && $location_list">
+			<select name="job_location" class="category"  id="job_location">
+				<option value="0">{$lang->all_locations}</option>
+				<option loop="$location_list =>$key, $location" value="{$location->location_srl}"  <!--@if($location_srl==$location->location_srl)-->selected<!--@end-->>{$location->description}</option>
+			</select>
+		</th>
+		<th scope="col" class="date">{$lang->open_date}</th>
+		<th scope="col" class="date">{$lang->close_date}</th>
+		<th scope="col" cond="$logged_info->is_admin == 'Y'"><strong>{$lang->applicants}<strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    {@$i = 2}
+	{@$index = 1}
+	<tr loop="$jobList => $key,$job">
+		<td class="checkbox" cond="$logged_info->is_admin == 'Y'"><input class="cartCheckBox" type="checkbox" name="cart" value="{$job->document_srl}"/></td>
+		<td>{$index}</td>
+		<td class="job_title"><a href="{getUrl('act','dispRecruitJobdetail','document_srl',$job->document_srl)}" class="job_link">{cut_str($job->title,60)}</a></td>
+		<td cond="$job->category_srl && $category_list">{cut_str($category_list[$job->category_srl]->title,15)}</td>
+		<td cond="!$job->category_srl && $category_list">-</td>
+		<td cond="$job->location_srl && $location_list">
+			{@ $oRecruitModel = &getModel('recruit');
+				  $recruit_location = $oRecruitModel->getLocationBySrl($job->location_srl);
+			}
+			{cut_str($recruit_location->description,15)}
+		</td>
+		<td cond="!$job->location_srl && $location_list">-</td>
+		<td>{zdate($job->regdate,"Y-m-d", false)}</td>
+		<td>{zdate($job->close_date,"Y-m-d", false)}</td>
+		<td cond="$logged_info->is_admin == 'Y'" class="orange"><strong>{$job->comment_count}</strong></td>
+		{@$index++;}
+	</tr>
+
+    </tbody>
+</table>
+
+<block cond="!$jobList && $logged_info->is_admin == 'Y'">
+	<p class="no_job">{$lang->no_job_list}, {$lang->add_job_msg}</p>
+</block>
+<block cond="!$jobList && $logged_info->is_admin != 'Y'">
+	<p class="no_job">{$lang->no_job_list}.</p>
+</block>
+
+<div class="pagination a1" cond="$jobList">
+    <a href="{getUrl('page','','document_srl','','division',$division,'last_division',$last_division)}" class="prevEnd">{$lang->first_page}</a>
+    <!--@while($page_no = $page_navigation->getNextPage())-->
+        <!--@if($page == $page_no || (!$page && $page_no == 1))-->
+            <strong>{$page_no}</strong>
+        <!--@else-->
+            <a href="{getUrl('page',$page_no,'document_srl','','division',$division,'last_division',$last_division)}">{$page_no}</a>
+        <!--@end-->
+    <!--@end-->
+    <a href="{getUrl('page',$page_navigation->last_page,'document_srl','','division',$division,'last_division',$last_division)}" class="nextEnd">{$lang->last_page}</a>
+</div>
+
+<div cond="$logged_info->is_admin == 'Y'" class="btnArea addJobBtn">
+	<span class="etc">
+        <span class="deleteJobs btn"><a href="#" onclick="doDeleteGroup('delete_job');return false;">{$lang->cmd_deleteJobs}</a></span>
+    </span>
+    <a href="{getUrl('act','dispJobWrite','document_srl','')}" class="addJob_btn" ><span>{$lang->cmd_addJob}</span></a>
+</div>
+
+
+<form class="recruitSearchForm" action="{getUrl()}" method="get" id="fo_search">
+    <fieldset>
+        <legend>Search</legend>
+        <!--@if($vid)-->
+        <input type="hidden" name="vid" value="{$vid}" />
+        <!--@end-->
+        <input type="hidden" name="module_srl" value="{$module_srl}" />
+        <input type="hidden" name="category" value="{$category}" />
+
+		<select name="date_search" id="date_select">
+			<option value="0" <!--@if($date_search == '0')-->selected<!--@end-->>Date Published</option>
+			<option value="today" <!--@if($date_search == 'today')-->selected<!--@end-->>Today</option>
+			<option value="last_three_days" <!--@if($date_search == 'last_three_days')-->selected<!--@end-->>Last three days</option>
+			<option value="last_week" <!--@if($date_search == 'last_week')-->selected<!--@end-->>Last week</option>
+			<option value="last_month" <!--@if($date_search == 'last_month')-->selected<!--@end-->>Last month</option>
+			<option value="last_two_months"  <!--@if($date_search == 'last_two_months')-->selected<!--@end-->>Last two months</option>
+		</select>
+
+        <input type="text" name="search_keyword" value="{htmlspecialchars($search_keyword)}" class="inputText" accesskey="S" title="{$lang->cmd_search}" />
+        <span class="btn"><button type="submit" onclick="xGetElementById('fo_search').submit();return false;" class="search_btn">{$lang->cmd_search}</button></span>
+    </fieldset>
+</form>
+<div class="proWindow" id="proWindow">
+    <include target="delete_form.html" />
+</div>
+
+<script type="text/javascript">
+	jQuery(function($){
+		$('#job_category').change(function(){
+			var url = "{getUrl('','mid', $mid, 'act', 'dispJobList', 'location_srl', $location_srl)}"+"&category_srl="+$(this).val();
+			url = url.replace(/&amp;/g,"&");
+			window.location = url;
+		});
+		$('#job_location').change(function(){
+			var url = "{getUrl('','mid', $mid, 'act', 'dispJobList', 'category_srl', $category_srl)}"+"&location_srl="+$(this).val();
+			url = url.replace(/&amp;/g,"&");
+			window.location = url;
+		});
+		$('#date_select').change(function(){
+			var url = "{getUrl('','mid', $mid, 'act', 'dispJobList')}"+"&date_search="+$(this).val();
+			url = url.replace(/&amp;/g,"&");
+			window.location = url;
+		});
+	});
+</script>
+
+<include target="_footer.html" />

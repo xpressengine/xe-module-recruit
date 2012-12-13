@@ -1,0 +1,13 @@
+<query id="insertJobVars" action="insert">
+    <tables>
+        <table name="recruit_jobs" />
+    </tables>
+    <columns>
+        <column name="document_srl" var="document_srl"  filter="number" notnull="notnull" />
+		<column name="module_srl" var="module_srl" filter="number" default="0" notnull="notnull" />
+        <column name="location_srl" var="location_srl" />
+		<column name="contact_email" var="contact_email" />
+		<column name="contact_address" var="contact_address" />
+		<column name="close_date" var="close_date"/>
+    </columns>
+</query>

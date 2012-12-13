@@ -1,0 +1,8 @@
+<query id="deleteJobVarsByModule" action="delete">
+    <tables>
+        <table name="recruit_jobs" />
+    </tables>
+    <conditions>
+        <condition operation="equal" column="module_srl" var="module_srl" notnull="notnull" filter="number" />
+    </conditions>
+</query>

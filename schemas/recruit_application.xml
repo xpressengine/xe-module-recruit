@@ -1,0 +1,9 @@
+<table name="recruit_application">
+    <column name="comment_srl" type="number" size="11" notnull="notnull" index="idx_comment_srl" />
+	<column name="module_srl" type="number" size="11" notnull="notnull" index="idx_module_srl" />
+	<column name="member_srl" type="number" size="11" notnull="notnull" index="idx_member_srl" />
+	<column name="applicant_name" type="varchar" size="250" />
+	<column name="birth" type="date" index="idx_birth" />
+	<column name="age" type="number" size="11" />
+	<column name="phone_no" type="varchar" size="250" />
+</table>

@@ -1,0 +1,14 @@
+<query id="updateJobVars" action="update">
+    <tables>
+        <table name="recruit_jobs" />
+    </tables>
+    <columns>
+        <column name="location_srl" var="location_srl"/>
+		<column name="contact_email" var="contact_email"/>
+		<column name="contact_address" var="contact_address"/>
+		<column name="close_date" var="close_date"/>
+    </columns>
+    <conditions>
+        <condition operation="equal" column="document_srl" var="document_srl" notnull="notnull" filter="number" />
+    </conditions>
+</query>

@@ -1,0 +1,8 @@
+<query id="deleteJobVars" action="delete">
+    <tables>
+        <table name="recruit_jobs" />
+    </tables>
+    <conditions>
+        <condition operation="equal" column="document_srl" var="document_srl" notnull="notnull" filter="number" />
+    </conditions>
+</query>

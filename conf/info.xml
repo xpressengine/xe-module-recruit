@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+    <title xml:lang="ko">Recruitment</title>
+    <title xml:lang="en">Recruitment</title>
+    <title xml:lang="zh-CN">招聘</title>
+    <description xml:lang="ko">Provide recruitment module to user, includes jobs insert/update/delete, and manage job applications.</description>
+    <description xml:lang="en">Provide recruitment module to user, includes jobs insert/update/delete, and manage job applications.</description>
+    <description xml:lang="zh-CN">给用户提供搭建招聘系统功能，包含工作的添加/更新/删除，及工作申请和管理申请人等功能。</description>
+    <version>1.0</version>
+    <date>2012-12-04</date>
+    <category>service</category>
+
+    <author email_address="developers@xpressengine.com" >
+        <name xml:lang="ko">NHN</name>
+	    <name xml:lang="en">NHN</name>
+	    <name xml:lang="zh-CN">NHN</name>
+    </author>
+</module>

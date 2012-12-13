@@ -1,0 +1,14 @@
+<include target="_header.html" />
+
+<div cond="$XE_VALIDATOR_MESSAGE" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+{$setup_content}
+
+<script type="text/javascript">
+jQuery(function($){
+	var title = "{$lang->cv_setup}";
+	$('div#content form').find('h3').text(title);
+
+});
+</script>

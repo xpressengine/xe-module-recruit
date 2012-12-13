@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* NHN (developers@xpressengine.com) */
+/* recruit Reset */
+
+fieldset {border: 0 none;}
+fieldset.tModify legend {display: none;}
+
+.locationList .summary strong {color: #EA3F22;}
+.locationList .tSum { border-top: 2px solid #CBD4DF !important; float: left; margin-bottom: 50px; padding: 0; width: 38%;}
+.locationList .tSum .tHeader { border-left: 1px solid #E3E5E7; border-right: 1px solid #E3E5E7; overflow: hidden; padding: 8px 15px;}
+.locationList .tSum .tHeader .aLeft {float: left;}
+.locationList .tSum .tHeader .aRight {float: right;}
+.locationList .tSum .tHeader label {background: none repeat scroll 0 0 transparent; border: 0 none; color: #555555; cursor: default; font-size: 12px; font-weight: bold; padding: 0;}
+.locationList .tSum ul {border: 1px solid #E3E5E7; font-size: 12px; height: 360px; list-style: none outside none; margin: 0; overflow: auto; padding: 0; position: relative;}
+.locationList .tSum li {text-indent: 15px;}
+.locationList .tSum li {border-bottom: 1px solid #E3E5E7; border-top: 1px solid #E3E5E7; margin: -1px 0; padding: 8px 0; position: relative; text-indent: 15px;}
+.locationList .tSum li .tWord {color: #648AB9; font-weight: bold; text-decoration: none;}
+.locationList .tModify {background: none repeat scroll 0 0 #F9F9F9; border: 1px solid #EDEFF1; float: right; font-size: 12px; padding-bottom: 0; width: 59%;}
+.locationList .tModify .tagName {border-bottom: 1px solid #EDEFF1; margin: 0 0 -1px;padding: 15px 0 15px 25px;}
+.locationList .tModify dt {color: #868D95; display: inline-block; float: left; font-weight: bold; padding-top: 3px; }
+.locationList .tModify .tagName dd {display: inline; margin: 0; }
+.locationList .tModify .tagName .inputText {border: 1px solid #C6C6C6; color: #555555; font-size: 12px; height: 15px; margin-left: 5px; padding: 3px 4px; vertical-align: top; width: 200px;}
+table.delete_recruit th {width: 200px;}
