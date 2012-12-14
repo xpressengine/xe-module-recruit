@@ -82,7 +82,7 @@ background-repeat:no-repeat;background-position:left 8px}
 .recruitList th.title{width:100%}
 .recruitList th.myTitle{width:30%}
 .recruitList th a .sort{vertical-align:middle;margin:0 5px}
-.recruitList td{border:0;border-bottom:1px solid;padding:8px 6px 7px 6px;*padding:8px 6px 6px 6px;white-space:nowrap;text-align:center;line-height:normal;vertical-align:top; vertical-align: middle;}
+.recruitList td{border:0;border-bottom:1px solid;padding:8px 6px 7px 6px;*padding:8px 6px 6px 6px;text-align:center;line-height:normal;vertical-align:top; vertical-align: middle;}
 .recruitList td.notice{font-size:11px;font-weight:bold}
 .recruitList td.num{font:9px Tahoma}
 .recruitList td.check{font:11px Tahoma}
