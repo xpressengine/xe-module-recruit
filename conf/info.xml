@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="0.2">
-    <title xml:lang="ko">Recruitment</title>
+    <title xml:lang="ko">채용</title>
     <title xml:lang="en">Recruitment</title>
     <title xml:lang="zh-CN">招聘</title>
-    <description xml:lang="ko">Provide recruitment module to user, includes jobs insert/update/delete, and manage job applications.</description>
+    <description xml:lang="ko">사용자에게 구인 기능을 제공하여 채용 정보의 추가/변경/삭제 및 입사지원 신청과 신청자 관리가 가능합니다.</description>
     <description xml:lang="en">Provide recruitment module to user, includes jobs insert/update/delete, and manage job applications.</description>
     <description xml:lang="zh-CN">给用户提供搭建招聘系统功能，包含工作的添加/更新/删除，及工作申请和管理申请人等功能。</description>
     <version>1.0</version>

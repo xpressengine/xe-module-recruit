@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin version="0.2">
-    <title xml:lang="ko">Recruitment Module Default Skin</title>
+    <title xml:lang="ko">채용 모듈 기본 스킨</title>
 	<title xml:lang="en">Recruitment Module Default Skin</title>
     <title xml:lang="zh-CN">招聘模块默认皮肤</title>
     <description xml:lang="ko">
-        The default skin of the recruitment module
+        채용 모듈의 기본 스킨.
         NHN (developers@xpressengine.com)
     </description>
     <description xml:lang="en">

@@ -1,407 +1,402 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <lang>
     <item name="rescruitTitle">
-    	<value xml:lang="ko"><![CDATA[Recruit]]></value>
+    	<value xml:lang="ko"><![CDATA[채용]]></value>
     	<value xml:lang="en"><![CDATA[Recruit]]></value>
     	<value xml:lang="zh-CN"><![CDATA[招聘]]></value>
     </item>
 	 <item name="recruit_management">
-    	<value xml:lang="ko"><![CDATA[Recruit Management]]></value>
+    	<value xml:lang="ko"><![CDATA[채용 모듈 관리]]></value>
     	<value xml:lang="en"><![CDATA[Recruit Management]]></value>
     	<value xml:lang="zh-CN"><![CDATA[招聘模块管理]]></value>
     </item>
     <item name="recruit_title">
-    	<value xml:lang="ko"><![CDATA[Recruit title]]></value>
+    	<value xml:lang="ko"><![CDATA[이름]]></value>
     	<value xml:lang="en"><![CDATA[Recruit title]]></value>
     	<value xml:lang="zh-CN"><![CDATA[名称]]></value>
     </item>
         <item name="recruit_description">
-		<value xml:lang="ko"><![CDATA[Recruit description]]></value>
+		<value xml:lang="ko"><![CDATA[설명]]></value>
 		<value xml:lang="en"><![CDATA[Recruit description]]></value>
 		<value xml:lang="zh-CN"><![CDATA[描述]]></value>
-	</item>regdate
+	</item>
 	<item name="recruit_regdate">
-		<value xml:lang="ko"><![CDATA[Registration Date]]></value>
+		<value xml:lang="ko"><![CDATA[등록 날짜]]></value>
 		<value xml:lang="en"><![CDATA[Registration Date]]></value>
 		<value xml:lang="zh-CN"><![CDATA[注册日期]]></value>
 	</item>
 	<item name="recruit_disRecList">
-		<value xml:lang="ko"><![CDATA[List]]></value>
+		<value xml:lang="ko"><![CDATA[목록]]></value>
 		<value xml:lang="en"><![CDATA[List]]></value>
 		<value xml:lang="zh-CN"><![CDATA[列表]]></value>
 	</item>
 	<item name="default_contact_mail">
-		<value xml:lang="ko"><![CDATA[Default Contact  Email]]></value>
+		<value xml:lang="ko"><![CDATA[이메일]]></value>
 		<value xml:lang="en"><![CDATA[Default Contact  Email]]></value>
 		<value xml:lang="zh-CN"><![CDATA[默认邮箱]]></value>
 	</item>
 	<item name="about_admin_mail">
-		<value xml:lang="ko"><![CDATA[The mail addresses are used as management. Multiple mails can be sent with commas(,).]]></value>
+		<value xml:lang="ko"><![CDATA[관리 용도로 사용되는 메일 주소이며, 쉼표(,)를 이용하여 다중 입력이 가능합니다.]]></value>
 		<value xml:lang="en"><![CDATA[The mail addresses are used as management. Multiple mails can be sent with commas(,).]]></value>
 		<value xml:lang="zh-CN"><![CDATA[用来管理的邮件地址。 多电子邮件用逗号(,)来分隔。]]></value>
 	</item>
 	<item name="list_order">
-		<value xml:lang="ko"><![CDATA[Job number]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보 번호]]></value>
 		<value xml:lang="en"><![CDATA[Job number]]></value>
 		<value xml:lang="zh-CN"><![CDATA[编号]]></value>
 	</item>
 	<item name="update_order">
-		<value xml:lang="ko"><![CDATA[Update date]]></value>
+		<value xml:lang="ko"><![CDATA[변경일]]></value>
 		<value xml:lang="en"><![CDATA[Update date]]></value>
 		<value xml:lang="zh-CN"><![CDATA[更新日期]]></value>
 	</item>
 	<item name="regdate">
-		<value xml:lang="ko"><![CDATA[Registration Date]]></value>
+		<value xml:lang="ko"><![CDATA[등록일]]></value>
 		<value xml:lang="en"><![CDATA[Registration Date]]></value>
 		<value xml:lang="zh-CN"><![CDATA[注册日期]]></value>
 	</item>
 	<item name="cmd_recruit_list">
-		<value xml:lang="ko"><![CDATA[Recruit List]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보 리스트]]></value>
 		<value xml:lang="en"><![CDATA[Recruit List]]></value>
 		<value xml:lang="zh-CN"><![CDATA[查看列表]]></value>
 	</item>
 	<item name="cmd_view_info">
-		<value xml:lang="ko"><![CDATA[Recruit Info]]></value>
+		<value xml:lang="ko"><![CDATA[상세 정보]]></value>
 		<value xml:lang="en"><![CDATA[Recruit Info]]></value>
 		<value xml:lang="zh-CN"><![CDATA[详细信息]]></value>
 	</item>
 	<item name="cmd_create_recruit">
-		<value xml:lang="ko"><![CDATA[Create new recruit]]></value>
+		<value xml:lang="ko"><![CDATA[채용 모듈 설정]]></value>
 		<value xml:lang="en"><![CDATA[Create new recruit]]></value>
 		<value xml:lang="zh-CN"><![CDATA[建立招聘模块]]></value>
 	</item>
 	<item name="job_title">
-		<value xml:lang="ko"><![CDATA[Job Title]]></value>
+		<value xml:lang="ko"><![CDATA[직위 명칭]]></value>
 		<value xml:lang="en"><![CDATA[Job Title]]></value>
 		<value xml:lang="zh-CN"><![CDATA[职位名称]]></value>
 	</item>
 	<item name="recruitDate">
-		<value xml:lang="ko"><![CDATA[Update Date]]></value>
+		<value xml:lang="ko"><![CDATA[변경일]]></value>
 		<value xml:lang="en"><![CDATA[Update Date]]></value>
 		<value xml:lang="zh-CN"><![CDATA[更新日期]]></value>
 	</item>
 	<item name="cmd_addJob">
-		<value xml:lang="ko"><![CDATA[Add new job]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보 추가]]></value>
 		<value xml:lang="en"><![CDATA[Add new job]]></value>
 		<value xml:lang="zh-CN"><![CDATA[添加招聘]]></value>
 	</item>
 	<item name="job_description">
-		<value xml:lang="ko"><![CDATA[Job Description]]></value>
+		<value xml:lang="ko"><![CDATA[직무 소개]]></value>
 		<value xml:lang="en"><![CDATA[Job Description]]></value>
 		<value xml:lang="zh-CN"><![CDATA[工作描述]]></value>
 	</item>
 	<item name="cmd_delete">
-		<value xml:lang="ko"><![CDATA[Delete]]></value>
+		<value xml:lang="ko"><![CDATA[삭제]]></value>
 		<value xml:lang="en"><![CDATA[Delete]]></value>
 		<value xml:lang="zh-CN"><![CDATA[删除]]></value>
 	</item>
 	<item name="cmd_update">
-		<value xml:lang="ko"><![CDATA[Update]]></value>
+		<value xml:lang="ko"><![CDATA[수정]]></value>
 		<value xml:lang="en"><![CDATA[Update]]></value>
 		<value xml:lang="zh-CN"><![CDATA[修改]]></value>
 	</item>
 	<item name="category">
-		<value xml:lang="ko"><![CDATA[Category]]></value>
+		<value xml:lang="ko"><![CDATA[분류]]></value>
 		<value xml:lang="en"><![CDATA[Category]]></value>
 		<value xml:lang="zh-CN"><![CDATA[分类]]></value>
 	</item>
 	<item name="application">
-		<value xml:lang="ko"><![CDATA[Job Application]]></value>
+		<value xml:lang="ko"><![CDATA[입사 지원서 등록]]></value>
 		<value xml:lang="en"><![CDATA[Job Application]]></value>
 		<value xml:lang="zh-CN"><![CDATA[工作申请]]></value>
 	</item>
 	<item name="applicants">
-		<value xml:lang="ko"><![CDATA[Applicants]]></value>
+		<value xml:lang="ko"><![CDATA[신청자]]></value>
 		<value xml:lang="en"><![CDATA[Applicants]]></value>
 		<value xml:lang="zh-CN"><![CDATA[申请者]]></value>
 	</item>
 	<item name="applicants_email">
-		<value xml:lang="ko"><![CDATA[Email Address]]></value>
+		<value xml:lang="ko"><![CDATA[이메일]]></value>
 		<value xml:lang="en"><![CDATA[Email Address]]></value>
 		<value xml:lang="zh-CN"><![CDATA[电子邮件]]></value>
 	</item>
 	<item name="applicants_date">
-		<value xml:lang="ko"><![CDATA[Date]]></value>
+		<value xml:lang="ko"><![CDATA[신청일]]></value>
 		<value xml:lang="en"><![CDATA[Date]]></value>
 		<value xml:lang="zh-CN"><![CDATA[申请日期]]></value>
 	</item>
 	<item name="applicants_age">
-		<value xml:lang="ko"><![CDATA[Age]]></value>
+		<value xml:lang="ko"><![CDATA[나이]]></value>
 		<value xml:lang="en"><![CDATA[Age]]></value>
 		<value xml:lang="zh-CN"><![CDATA[年龄]]></value>
 	</item>
 	<item name="applicants_cv">
-		<value xml:lang="ko"><![CDATA[CV]]></value>
+		<value xml:lang="ko"><![CDATA[이력서]]></value>
 		<value xml:lang="en"><![CDATA[CV]]></value>
 		<value xml:lang="zh-CN"><![CDATA[简历]]></value>
 	</item>
 	<item name="cmd_detail">
-		<value xml:lang="ko"><![CDATA[View Detail]]></value>
+		<value xml:lang="ko"><![CDATA[상세 정보 보기]]></value>
 		<value xml:lang="en"><![CDATA[View Detail]]></value>
 		<value xml:lang="zh-CN"><![CDATA[查看详情]]></value>
 	</item>
 	<item name="comment">
-		<value xml:lang="ko"><![CDATA[Application]]></value>
+		<value xml:lang="ko"><![CDATA[신청]]></value>
 		<value xml:lang="en"><![CDATA[Application]]></value>
 		<value xml:lang="zh-CN"><![CDATA[申请]]></value>
 	</item>
 	<item name="cmd_comment_registration">
-		<value xml:lang="ko"><![CDATA[Apply Job]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보 등록]]></value>
 		<value xml:lang="en"><![CDATA[Apply Job]]></value>
 		<value xml:lang="zh-CN"><![CDATA[申请]]></value>
 	</item>
 	<item name="cmd_deleteJobs">
-		<value xml:lang="ko"><![CDATA[Delete Jobs]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보 삭제]]></value>
 		<value xml:lang="en"><![CDATA[Delete Jobs]]></value>
 		<value xml:lang="zh-CN"><![CDATA[删除选中的工作]]></value>
 	</item>
 	<item name="cmd_deleteApplicants">
-		<value xml:lang="ko"><![CDATA[Delete Applicants]]></value>
+		<value xml:lang="ko"><![CDATA[입사 지원서 삭제]]></value>
 		<value xml:lang="en"><![CDATA[Delete Applicants]]></value>
 		<value xml:lang="zh-CN"><![CDATA[删除选中的申请人]]></value>
 	</item>
 	<item name="location">
-		<value xml:lang="ko"><![CDATA[Job Location]]></value>
+		<value xml:lang="ko"><![CDATA[근무지]]></value>
 		<value xml:lang="en"><![CDATA[Job Location]]></value>
 		<value xml:lang="zh-CN"><![CDATA[工作地点]]></value>
 	</item>
 	<item name="use_location">
-		<value xml:lang="ko"><![CDATA[Enable Location]]></value>
+		<value xml:lang="ko"><![CDATA[근무지 사용]]></value>
 		<value xml:lang="en"><![CDATA[Enable Location]]></value>
 		<value xml:lang="zh-CN"><![CDATA[启用位置]]></value>
 	</item>
 	<item name="about_use_location">
-		<value xml:lang="ko"><![CDATA[If checked, the location function will be enabled.]]></value>
+		<value xml:lang="ko"><![CDATA[이 항목을 선택하면 근무지 기능이 활성화 됩니다.]]></value>
 		<value xml:lang="en"><![CDATA[If checked, the location function will be enabled.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[选择此项可以使用位置功能。]]></value>
 	</item>
 	<item name="applicant_name">
-		<value xml:lang="ko"><![CDATA[Applicant Name]]></value>
+		<value xml:lang="ko"><![CDATA[신청자]]></value>
 		<value xml:lang="en"><![CDATA[Applicant Name]]></value>
 		<value xml:lang="zh-CN"><![CDATA[申请者]]></value>
 	</item>
 	<item name="gender">
-		<value xml:lang="ko"><![CDATA[Gender]]></value>
+		<value xml:lang="ko"><![CDATA[성별]]></value>
 		<value xml:lang="en"><![CDATA[Gender]]></value>
 		<value xml:lang="zh-CN"><![CDATA[性别]]></value>
 	</item>
 	<item name="contact_address">
-		<value xml:lang="ko"><![CDATA[Contact address]]></value>
+		<value xml:lang="ko"><![CDATA[주소]]></value>
 		<value xml:lang="en"><![CDATA[Contact address]]></value>
 		<value xml:lang="zh-CN"><![CDATA[联系地址]]></value>
 	</item>
 	<item name="phone_no">
-		<value xml:lang="ko"><![CDATA[Phone No.]]></value>
-		<value xml:lang="en"><![CDATA[Phone No.]]></value>
-		<value xml:lang="zh-CN"><![CDATA[电话号码]]></value>
-	</item>
-	<item name="phone_no">
-		<value xml:lang="ko"><![CDATA[Phone No.]]></value>
+		<value xml:lang="ko"><![CDATA[전화번호]]></value>
 		<value xml:lang="en"><![CDATA[Phone No.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[电话号码]]></value>
 	</item>
 	<item name="total_location_result">
-		<value xml:lang="ko"><![CDATA[<strong>%d</strong> 의Location 분류가 사용됨]]></value>
+		<value xml:lang="ko"><![CDATA[<strong>%d</strong> 개의 근무지 분류가 사용됨.]]></value>
 		<value xml:lang="en"><![CDATA[Total <strong>%d</strong> locations are used.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[总共有 <strong>%d</strong> 个 分类 被使用.]]></value>
 	</item>
 	<item name="none_location">
-		<value xml:lang="ko"><![CDATA[None Location]]></value>
+		<value xml:lang="ko"><![CDATA[근무지 정보 없음]]></value>
 		<value xml:lang="en"><![CDATA[None Location]]></value>
 		<value xml:lang="zh-CN"><![CDATA[没有位置.]]></value>
 	</item>
 	<item name="tagModify">
-		<value xml:lang="ko"><![CDATA[Add/Update Location]]></value>
+		<value xml:lang="ko"><![CDATA[근무지 추가/변경]]></value>
 		<value xml:lang="en"><![CDATA[Add/Update Location]]></value>
 		<value xml:lang="zh-CN"><![CDATA[添加、修改位置.]]></value>
 	</item>
 	<item name="cmd_manage_selected_recruit">
-		<value xml:lang="ko"><![CDATA[Manage Selected Recruit]]></value>
+		<value xml:lang="ko"><![CDATA[선택한 모듈 관리]]></value>
 		<value xml:lang="en"><![CDATA[Manage Selected Recruit]]></value>
 		<value xml:lang="zh-CN"><![CDATA[管理已选的模块]]></value>
 	</item>
 	<item name="use_notification">
-		<value xml:lang="ko"><![CDATA[Eable Email Notification]]></value>
+		<value xml:lang="ko"><![CDATA[메일 알림 기능 사용]]></value>
 		<value xml:lang="en"><![CDATA[Eable Email Notification]]></value>
 		<value xml:lang="zh-CN"><![CDATA[启用邮件通知功能]]></value>
 	</item>
 	<item name="about_use_notification">
-		<value xml:lang="ko"><![CDATA[If checked, an email notification function will be enabled.]]></value>
+		<value xml:lang="ko"><![CDATA[이 항목을 선택하면 메일 알림 기능이 활성화 됩니다.]]></value>
 		<value xml:lang="en"><![CDATA[If checked, an email notification function will be enabled.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[选择此项可以启用邮件通知功能。]]></value>
 	</item>
 	<item name="recruit_title">
-		<value xml:lang="ko"><![CDATA[Recruit Title]]></value>
+		<value xml:lang="ko"><![CDATA[채용 제목]]></value>
 		<value xml:lang="en"><![CDATA[Recruit Title]]></value>
 		<value xml:lang="zh-CN"><![CDATA[招聘标题]]></value>
 	</item>
 	<item name="recruit_center">
-		<value xml:lang="ko"><![CDATA[Recruit Center]]></value>
+		<value xml:lang="ko"><![CDATA[채용 센터]]></value>
 		<value xml:lang="en"><![CDATA[Recruit Center]]></value>
 		<value xml:lang="zh-CN"><![CDATA[招聘中心]]></value>
 	</item>
 		<item name="cmd_manage_location">
-		<value xml:lang="ko"><![CDATA[Manage Locations]]></value>
+		<value xml:lang="ko"><![CDATA[근무지 관리]]></value>
 		<value xml:lang="en"><![CDATA[Manage Locations]]></value>
 		<value xml:lang="zh-CN"><![CDATA[管理工作地点]]></value>
 	</item>
 	<item name="job_count">
-		<value xml:lang="ko"><![CDATA[Nember of Jobs]]></value>
+		<value xml:lang="ko"><![CDATA[채용 인원]]></value>
 		<value xml:lang="en"><![CDATA[Nember of Jobs]]></value>
 		<value xml:lang="zh-CN"><![CDATA[工作数量]]></value>
 	</item>
 	<item name="open_date">
-		<value xml:lang="ko"><![CDATA[Open Date]]></value>
+		<value xml:lang="ko"><![CDATA[시작일]]></value>
 		<value xml:lang="en"><![CDATA[Open Date]]></value>
 		<value xml:lang="zh-CN"><![CDATA[发布日期]]></value>
 	</item>
 	<item name="close_date">
-		<value xml:lang="ko"><![CDATA[Close Date]]></value>
+		<value xml:lang="ko"><![CDATA[종료일]]></value>
 		<value xml:lang="en"><![CDATA[Close Date]]></value>
 		<value xml:lang="zh-CN"><![CDATA[关闭日期]]></value>
 	</item>
 	<item name="contact_email">
-		<value xml:lang="ko"><![CDATA[Contact Email]]></value>
+		<value xml:lang="ko"><![CDATA[담당자 메일]]></value>
 		<value xml:lang="en"><![CDATA[Contact Email]]></value>
 		<value xml:lang="zh-CN"><![CDATA[联系人邮件]]></value>
 	</item>
 	<item name="all_categories">
-		<value xml:lang="ko"><![CDATA[All Categories]]></value>
+		<value xml:lang="ko"><![CDATA[전체 분류]]></value>
 		<value xml:lang="en"><![CDATA[All Categories]]></value>
 		<value xml:lang="zh-CN"><![CDATA[所有分类]]></value>
 	</item>
 	<item name="all_locations">
-		<value xml:lang="ko"><![CDATA[All Locations]]></value>
+		<value xml:lang="ko"><![CDATA[전체 근무지]]></value>
 		<value xml:lang="en"><![CDATA[All Locations]]></value>
 		<value xml:lang="zh-CN"><![CDATA[所有地点]]></value>
 	</item>
 	<item name="return_job_list">
-		<value xml:lang="ko"><![CDATA[Return to jobs list]]></value>
+		<value xml:lang="ko"><![CDATA[채용 목록으로 돌아가기]]></value>
 		<value xml:lang="en"><![CDATA[Return to jobs list]]></value>
 		<value xml:lang="zh-CN"><![CDATA[返回工作列表]]></value>
 	</item>
 		<item name="return_job">
-		<value xml:lang="ko"><![CDATA[Return to job]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보로 돌아가기]]></value>
 		<value xml:lang="en"><![CDATA[Return to job]]></value>
 		<value xml:lang="zh-CN"><![CDATA[返回工作介绍]]></value>
 	</item>
 	<item name="application_form">
-		<value xml:lang="ko"><![CDATA[Application Form]]></value>
+		<value xml:lang="ko"><![CDATA[신청서 양식]]></value>
 		<value xml:lang="en"><![CDATA[Application Form]]></value>
 		<value xml:lang="zh-CN"><![CDATA[申请表单]]></value>
 	</item>
 	<item name="self_introduction">
-		<value xml:lang="ko"><![CDATA[Self Introduction]]></value>
+		<value xml:lang="ko"><![CDATA[자기 소개]]></value>
 		<value xml:lang="en"><![CDATA[Self Introduction]]></value>
 		<value xml:lang="zh-CN"><![CDATA[自我介绍]]></value>
 	</item>
 	<item name="cv_attach">
-		<value xml:lang="ko"><![CDATA[Attach CV]]></value>
+		<value xml:lang="ko"><![CDATA[CV 첨부]]></value>
 		<value xml:lang="en"><![CDATA[Attach CV]]></value>
-		<value xml:lang="zh-CN"><![CDATA[]]></value>
+		<value xml:lang="zh-CN"><![CDATA[上传CV]]></value>
 	</item>
 	<item name="input_self_introduction">
-		<value xml:lang="ko"><![CDATA[Please input your brief introduction here]]></value>
+		<value xml:lang="ko"><![CDATA[간략하게 자기소개를 입력하세요]]></value>
 		<value xml:lang="en"><![CDATA[Please input your brief introduction here]]></value>
 		<value xml:lang="zh-CN"><![CDATA[请在此输入简单的自我介绍]]></value>
 	</item>
 	<item name="about_contact_mail">
-		<value xml:lang="ko"><![CDATA[The mail addresses are used as a default job contact email. Multiple mails can be sent with commas(,).]]></value>
+		<value xml:lang="ko"><![CDATA[입사 지원 신청시 사용될 기본 메일주소 입력해주세요. 쉼표(,)로 구분하여 다중으로 입력 가능합니다.]]></value>
 		<value xml:lang="en"><![CDATA[The mail addresses are used as a default job contact email. Multiple mails can be sent with commas(,).]]></value>
 		<value xml:lang="zh-CN"><![CDATA[输入默认的用于申请工作的邮件地址，多个邮件可以用(,)分隔。]]></value>
 	</item>
 	<item name="confirm_delete_jobs">
-		<value xml:lang="ko"><![CDATA[Are you sure you want to delete these jobs?]]></value>
+		<value xml:lang="ko"><![CDATA[이 채용 정보를 삭제하시겠습니까?]]></value>
 		<value xml:lang="en"><![CDATA[Are you sure you want to delete these jobs?]]></value>
 		<value xml:lang="zh-CN"><![CDATA[你确定要删除这些工作吗？]]></value>
 	</item>
 	<item name="confirm_delete_job">
-		<value xml:lang="ko"><![CDATA[Are you sure you want to delete this job?]]></value>
+		<value xml:lang="ko"><![CDATA[이 채용 정보를 삭제하시겠습니까?]]></value>
 		<value xml:lang="en"><![CDATA[Are you sure you want to delete this job?]]></value>
 		<value xml:lang="zh-CN"><![CDATA[你确定要删除这个工作吗？]]></value>
 	</item>
 	<item name="confirm_delete_applicant">
-		<value xml:lang="ko"><![CDATA[Are you sure you want to delete this applicant?]]></value>
+		<value xml:lang="ko"><![CDATA[이 입사지원서를 삭제하시겠습니까?]]></value>
 		<value xml:lang="en"><![CDATA[Are you sure you want to delete this applicant?]]></value>
 		<value xml:lang="zh-CN"><![CDATA[你确定要删除这个申请人吗？]]></value>
 	</item>
 	<item name="confirm_delete_applicants">
-		<value xml:lang="ko"><![CDATA[Are you sure you want to delete these applicants?]]></value>
+		<value xml:lang="ko"><![CDATA[이 입사지원서를 삭제하시겠습니까?]]></value>
 		<value xml:lang="en"><![CDATA[Are you sure you want to delete these applicants?]]></value>
-		<value xml:lang="zh-CN"><![CDATA[你确定要删除这个申请人吗？]]></value>
+		<value xml:lang="zh-CN"><![CDATA[你确定要删除这些申请人吗？]]></value>
 	</item>
 	<item name="job_success_registed">
-		<value xml:lang="ko"><![CDATA[Registered a new job successfully.]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보를 등록하였습니다.]]></value>
 		<value xml:lang="en"><![CDATA[Registered a new job successfully.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[新工作成功添加]]></value>
 	</item> 
 	<item name="job_success_updated">
-		<value xml:lang="ko"><![CDATA[Updated the job successfully.]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보가 변경되었습니다..]]></value>
 		<value xml:lang="en"><![CDATA[Updated the job successfully.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[工作成功更新]]></value>
 	</item>
 	<item name="job_success_deleted">
-		<value xml:lang="ko"><![CDATA[Deleted the job successfully.]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보가 삭제되었습니다.]]></value>
 		<value xml:lang="en"><![CDATA[Deleted the job successfully.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[工作成功删除]]></value>
 	</item>
 	<item name="application_success_registed">
-		<value xml:lang="ko"><![CDATA[You have applied this job successfully.]]></value>
+		<value xml:lang="ko"><![CDATA[입사 지원서가 등록되었습니다.]]></value>
 		<value xml:lang="en"><![CDATA[You have applied this job successfully.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[您已成功申请此工作]]></value>
 	</item>
 	<item name="application_success_updated">
-		<value xml:lang="ko"><![CDATA[Your application has been updated successfully.]]></value>
+		<value xml:lang="ko"><![CDATA[입사 지원서가 변경되었습니다.]]></value>
 		<value xml:lang="en"><![CDATA[Your application has been updated successfully.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[您的工作申请已成功更新]]></value>
 	</item>
 	<item name="application_success_deleted">
-		<value xml:lang="ko"><![CDATA[The application has been deleted successfully.]]></value>
+		<value xml:lang="ko"><![CDATA[입사 지원서가 삭제되었습니다.]]></value>
 		<value xml:lang="en"><![CDATA[The application has been deleted successfully.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[申请人已成功删除]]></value>
 	</item>
 	<item name="job_count">
-		<value xml:lang="ko"><![CDATA[Job Count]]></value>
+		<value xml:lang="ko"><![CDATA[채용 인원]]></value>
 		<value xml:lang="en"><![CDATA[Job Count]]></value>
 		<value xml:lang="zh-CN"><![CDATA[工作数量]]></value>
 	</item>
 	<item name="cv_upload_failed">
-		<value xml:lang="ko"><![CDATA[Submit application failed, uploaded CV in an incorrect format or oversize.]]></value>
+		<value xml:lang="ko"><![CDATA[형식이 맞지 않거나 파일 크기 제한을 초과하여 이력서 등록이 실패하였습니다.]]></value>
 		<value xml:lang="en"><![CDATA[Submit application failed, uploaded CV in an incorrect format or oversize.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[提交申请失败，上传的履历文档不符合要求。]]></value>
 	</item>
 	<item name="cv_setup">
-		<value xml:lang="ko"><![CDATA[CV File Setup]]></value>
+		<value xml:lang="ko"><![CDATA[이력서 업로드 설정]]></value>
 		<value xml:lang="en"><![CDATA[CV File Setup]]></value>
 		<value xml:lang="zh-CN"><![CDATA[CV上传设置]]></value>
 	</item>
 	<item name="max_file_size">
-		<value xml:lang="ko"><![CDATA[Maximum File Size]]></value>
+		<value xml:lang="ko"><![CDATA[최대 파일 크기]]></value>
 		<value xml:lang="en"><![CDATA[Maximum File Size]]></value>
 		<value xml:lang="zh-CN"><![CDATA[最大文件大小]]></value>
 	</item>
 	<item name="accepted_format">
-		<value xml:lang="ko"><![CDATA[Accepted Format]]></value>
+		<value xml:lang="ko"><![CDATA[파일 형식]]></value>
 		<value xml:lang="en"><![CDATA[Accepted Format]]></value>
 		<value xml:lang="zh-CN"><![CDATA[文件格式]]></value>
 	</item>
 	<item name="uploaded_cv">
-		<value xml:lang="ko"><![CDATA[Uploaded CV]]></value>
+		<value xml:lang="ko"><![CDATA[업로드한 이력]]></value>
 		<value xml:lang="en"><![CDATA[Uploaded CV]]></value>
 		<value xml:lang="zh-CN"><![CDATA[已上传的履历]]></value>
 	</item>
 	<item name="already_applied">
-		<value xml:lang="ko"><![CDATA[You have already applied this job.]]></value>
+		<value xml:lang="ko"><![CDATA[이 입사 지원서는 이미 접수되었습니다.]]></value>
 		<value xml:lang="en"><![CDATA[You have already applied this job.]]></value>
 		<value xml:lang="zh-CN"><![CDATA[您已经申请了此工作]]></value>
 	</item>
 	<item name="no_job_list">
-		<value xml:lang="ko"><![CDATA[There is not a jobs list yet]]></value>
+		<value xml:lang="ko"><![CDATA[등록된 입사 지원서가 없습니다.]]></value>
 		<value xml:lang="en"><![CDATA[There is not a jobs list yet]]></value>
 		<value xml:lang="zh-CN"><![CDATA[暂时没有工作]]></value>
 	</item>
 	<item name="add_job_msg">
-		<value xml:lang="ko"><![CDATA[please add a new job]]></value>
+		<value xml:lang="ko"><![CDATA[채용 정보를 등록해주세요.]]></value>
 		<value xml:lang="en"><![CDATA[please add a new job]]></value>
 		<value xml:lang="zh-CN"><![CDATA[请添加工作]]></value>
 	</item>

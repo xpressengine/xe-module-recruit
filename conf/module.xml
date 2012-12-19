@@ -2,7 +2,7 @@
 <module>
     <grants>
         <grant name="write_comment" default="guest">
-            <title xml:lang="ko">Submit Application</title>
+            <title xml:lang="ko">입사 지원 신청</title>
 			<title xml:lang="en">Submit Application</title>
             <title xml:lang="zh-CN">申请工作</title>
         </grant>
@@ -47,7 +47,7 @@
     <menus>
 		<menu name="recruit" type="all">
 			<title xml:lang="en">Recruit</title>
-			<title xml:lang="ko">Recruit</title>
+			<title xml:lang="ko">채용</title>
 			<title xml:lang="zh-CN">Recruit</title>
 		</menu>
 	</menus>
